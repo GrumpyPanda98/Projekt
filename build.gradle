@@ -17,7 +17,7 @@ javafx {
 application {
     // Define the main class for the application
     mainClassName = 'Projekt.MainApp' // UPDATE THIS!
-}hej
+}hej 
 
 task fatJar(type: Jar, group: 'Custom Tasks', description: 'Produces a jar with all dependencies included'){
     manifest {
