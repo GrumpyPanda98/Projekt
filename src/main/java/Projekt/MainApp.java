@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import Projekt.model.*;
 
 public class MainApp extends Application {
 
@@ -69,6 +70,7 @@ public class MainApp extends Application {
 	}
 
     public static void main(String[] args) {
+        HealthPerson Lars = new HealthPerson("username", "password", "Lars Pilgaard", "Lungeafdelingen, Randers hospital");
         launch(args);
     }
 }
