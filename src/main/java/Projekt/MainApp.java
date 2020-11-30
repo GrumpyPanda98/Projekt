@@ -11,6 +11,10 @@ import javafx.stage.Stage;
 import Projekt.model.*;
 
 public class MainApp extends Application {
+ /**
+  * Tilføj sundhedspersoner
+  */
+  HealthPerson Lars = new HealthPerson("username", "password", "Lars Pilgaard", "Lungeafdelingen, Randers hospital");
 
     private Stage primaryStage;
     private BorderPane rootLayout;
@@ -70,7 +74,7 @@ public class MainApp extends Application {
 	}
 
     public static void main(String[] args) {
-        HealthPerson Lars = new HealthPerson("username", "password", "Lars Pilgaard", "Lungeafdelingen, Randers hospital");
+        
         launch(args);
     }
 }
