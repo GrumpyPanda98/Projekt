@@ -21,7 +21,27 @@ public class Patient {
         this.sortDataCategory = sortDataCategory;
     }
 
-    
+    public String getAddress() {
+        return address;
+    }
+    public String getCprNumber() {
+        return cprNumber;
+    }
+    public Datacategory getDatacategory() {
+        return datacategory;
+    }
+    public String getHospital() {
+        return hospital;
+    }
+    public String getMedicalCenter() {
+        return medicalCenter;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getSortDataCategory() {
+        return sortDataCategory;
+    }
   
 
 

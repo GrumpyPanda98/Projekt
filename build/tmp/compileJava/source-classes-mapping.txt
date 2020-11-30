@@ -1,7 +1,5 @@
 Projekt/model/Datacategory.java
  Projekt.model.Datacategory
-Projekt/controller/SearchControl.java
- Projekt.controller.SearchControl
 Projekt/MainApp.java
  Projekt.MainApp
 Projekt/model/Patient.java
@@ -10,3 +8,5 @@ Projekt/controller/LoginCtrl.java
  Projekt.controller.LoginCtrl
 Projekt/model/HealthPerson.java
  Projekt.model.HealthPerson
+Projekt/controller/SearchCtrl.java
+ Projekt.controller.SearchCtrl

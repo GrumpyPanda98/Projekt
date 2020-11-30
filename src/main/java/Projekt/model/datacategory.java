@@ -15,6 +15,20 @@ public class Datacategory {
         this.notes = notes;
     }
 
+    public LocalDate getDate() {
+        return date;
+    }
+    public String getDoneBy() {
+        return doneBy;
+    }
+    public String getNotes() {
+        return notes;
+    }
+
+    public boolean getGraphValidy() {
+        return graphValidy;
+    }
+
 
 }
 
