@@ -24,7 +24,7 @@ public class MainApp extends Application {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("AddressApp");
 
-        initRootLayout();
+        //initRootLayout();
 
         showLoginView();
     }
@@ -32,7 +32,7 @@ public class MainApp extends Application {
     /**
      * Initializes the root layout.
      */
-    public void initRootLayout() {
+    /*public void initRootLayout() {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
@@ -47,6 +47,7 @@ public class MainApp extends Application {
             e.printStackTrace();
         }
     }
+    */
 
     /**
      * Shows the person overview inside the root layout.
@@ -59,7 +60,7 @@ public class MainApp extends Application {
             AnchorPane LoginView = (AnchorPane) loader.load();
             
             // Set person overview into the center of root layout.
-            rootLayout.setCenter(LoginView);
+           // rootLayout.setCenter(LoginView);
         } catch (IOException e) {
             e.printStackTrace();
         }

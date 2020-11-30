@@ -1,2 +1,10 @@
+Projekt/model/Datacategory.java
+ Projekt.model.Datacategory
+Projekt/controller/SearchControl.java
+ Projekt.controller.SearchControl
 Projekt/MainApp.java
  Projekt.MainApp
+Projekt/model/Patient.java
+ Projekt.model.Patient
+Projekt/model/HealthPerson.java
+ Projekt.model.HealthPerson

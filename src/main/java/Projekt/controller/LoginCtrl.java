@@ -1,4 +1,4 @@
-package Projekt.controller;
+/*package Projekt.controller;
 
 import javafx.fxml.FXML;
 import Projekt.MainApp;
@@ -8,14 +8,14 @@ public class LoginCtrl{
 
 
 
-    public void VerifyUser(usernameText:Textfield,passwordText:PasswordField):{
+    public void VerifyUser(usernameText:Textfield,passwordText:PasswordField) {
 
 
     }
 
 
 }
-
+*/
 
 
 

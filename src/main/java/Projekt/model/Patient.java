@@ -10,7 +10,7 @@ public class Patient {
     private String hospital;
     private String sortDataCategory;
 
-    public Patient(String name, String address, String cprNumber, Projekt.model.datacategory datacategory,
+    public Patient(String name, String address, String cprNumber, Datacategory datacategory,
             String medicalCenter, String hospital, String sortDataCategory) {
         this.name = name;
         this.address = address;

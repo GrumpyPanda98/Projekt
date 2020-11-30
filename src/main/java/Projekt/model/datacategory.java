@@ -1,14 +1,14 @@
 package Projekt.model;
-import java.time;
+import java.time.LocalDate;
 
 
 public class Datacategory {
-    private localdate date;
+    private LocalDate date;
     private String doneBy;
     private boolean graphValidy;
     private String notes;
 
-    public Datacategory(localdate date, String doneBy, boolean graphValidy, String notes){
+    public Datacategory(LocalDate date, String doneBy, boolean graphValidy, String notes){
         this.date = date;
         this.doneBy = doneBy;
         this.graphValidy = graphValidy;
