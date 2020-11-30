@@ -6,5 +6,7 @@ Projekt/MainApp.java
  Projekt.MainApp
 Projekt/model/Patient.java
  Projekt.model.Patient
+Projekt/controller/LoginCtrl.java
+ Projekt.controller.LoginCtrl
 Projekt/model/HealthPerson.java
  Projekt.model.HealthPerson
