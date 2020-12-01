@@ -1,4 +1,5 @@
 package Projekt.model;
+import java.util.*;
 
 public class HealthPerson {
     public String username;
@@ -12,6 +13,7 @@ public HealthPerson(String username, String password, String name, String workpl
     this.name = name;
     this.workplace = workplace;
 
+    
 }
 public String getName() {
     return name;
@@ -25,6 +27,9 @@ public String getUsername() {
 public String getWorkplace() {
     return workplace;
 }
+
+
+
 
 }
 

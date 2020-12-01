@@ -1,7 +1,7 @@
 package Projekt;
 
+import java.util.*;
 import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,12 +10,10 @@ import javafx.stage.Stage;
 import Projekt.model.*;
 
 public class MainApp extends Application {
- /**
-  * Tilføj sundhedspersoner
-  */
-  HealthPerson Lars = new HealthPerson("username123", "password456", "Lars Pilgaard", "Lungeafdelingen, Randers hospital");
 
-    private Stage primaryStage;
+  
+   
+  private Stage primaryStage;
    // public BorderPane rootLayout;
 
     @Override
@@ -26,8 +24,7 @@ public class MainApp extends Application {
     
 
         showLoginView();
-
-       
+    
 
         
     }
