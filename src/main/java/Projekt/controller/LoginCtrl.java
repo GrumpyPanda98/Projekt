@@ -30,8 +30,9 @@ public class LoginCtrl {
 
     @FXML
     void loginPressed(ActionEvent event) throws IOException {
+        
           if (username.getText().equals("e") && password.getText().equals("e")) {
-           // showSearchView();  
+     
            FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("/SearchView.fxml")); // Ny loader som henter "SearchView"
            
            Parent root1 = (Parent) fxmlloader.load(); 

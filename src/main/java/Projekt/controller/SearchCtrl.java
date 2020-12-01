@@ -15,7 +15,7 @@ public class SearchCtrl {
 
     @FXML
     void SearchPressed(ActionEvent event) {
-
+        System.out.println(cprTextfield.getText()); 
     }
 
 }
