@@ -1,10 +1,10 @@
-package dk.kaspersoerensen.database;
+package Projekt.controller;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Implement this interface when calling the {@link DatabaseManipulator#executeQueryWithResultSet(Queryable)} method
+ * Implement this interface when calling the {@link DatabaseCtrl#executeQueryWithResultSet(Queryable)} method
  */
 public interface Queryable {
         
