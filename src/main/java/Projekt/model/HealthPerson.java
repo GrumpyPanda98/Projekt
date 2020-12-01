@@ -1,5 +1,4 @@
 package Projekt.model;
-import java.util.*;
 
 public class HealthPerson {
     public String username;
@@ -27,6 +26,7 @@ public String getUsername() {
 public String getWorkplace() {
     return workplace;
 }
+
 
 
 
