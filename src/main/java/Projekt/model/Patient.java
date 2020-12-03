@@ -4,11 +4,11 @@ package Projekt.model;
 public class Patient {
     public String name ;
     public String address ;
-    private String cprNumber ;
-    private Datacategory datacategory;
-    private String medicalCenter ;
-    private String hospital;
-    private String sortDataCategory;
+    public String cprNumber ;
+    public Datacategory datacategory;
+    public String medicalCenter ;
+    public String hospital;
+    public String sortDataCategory;
 
     public Patient(String name, String address, String cprNumber, Datacategory datacategory,
             String medicalCenter, String hospital, String sortDataCategory) {

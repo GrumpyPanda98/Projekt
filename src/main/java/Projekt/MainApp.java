@@ -9,7 +9,8 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
 
-  
+   
+   
    
   private Stage primaryStage;
    // public BorderPane rootLayout;
@@ -41,6 +42,11 @@ public class MainApp extends Application {
             // ReferralCtrl controller = loader.getController();
             primaryStage.show();
             
+            
+            
+            
+
+                    
         } catch (IOException e) {
             
             e.printStackTrace();

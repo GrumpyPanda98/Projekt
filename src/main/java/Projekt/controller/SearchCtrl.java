@@ -1,15 +1,16 @@
 package Projekt.controller;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import Projekt.controller.DatabaseCtrl;
+import Projekt.model.Patient;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 
-public class SearchCtrl extends DatabaseCtrl {
+public class SearchCtrl implements Queryable {
+    private static String cprNumber;
 
     @FXML
     private TextField cprTextfield;
@@ -36,12 +37,30 @@ public class SearchCtrl extends DatabaseCtrl {
     }
 
     @FXML
-    void SearchPressed(ActionEvent event) throws SQLException {
-        DatabaseHanddlerCtrl("SELECT `navn` FROM `Patientinfo` WHERE `CPR` = 1111111111");
-                    
-        }
+    String SearchPressed(ActionEvent event) {
+        cprNumber = cprTextfield.getText();
+
+        return cprNumber;
 
     }
 
+    @Override
+    public void processResultSet(ResultSet rs) throws SQLException {
+        // TODO Auto-generated method stub
 
+    }
+
+    @Override
+    public String returnSqlQuery() {
+        String sqlStatement = "SELECT FirstName, LastName FROM Patients WHERE Patients.CPRnumber=" + Patient.getCprNumber();
+        return sqlStatement;
+    }
+
+    @Override
+    public String returnSqlUpdate() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+}
 
