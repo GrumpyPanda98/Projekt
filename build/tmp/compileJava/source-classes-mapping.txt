@@ -6,10 +6,10 @@ Projekt/model/Patient.java
  Projekt.model.Patient
 Projekt/controller/LoginCtrl.java
  Projekt.controller.LoginCtrl
-Projekt/controller/Queryable.java
- Projekt.controller.Queryable
 Projekt/model/HealthPerson.java
  Projekt.model.HealthPerson
+Projekt/controller/Queryable.java
+ Projekt.controller.Queryable
 Projekt/controller/DatabaseCtrl.java
  Projekt.controller.DatabaseCtrl
 Projekt/controller/SearchCtrl.java
