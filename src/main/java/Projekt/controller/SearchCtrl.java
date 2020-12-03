@@ -2,15 +2,23 @@ package Projekt.controller;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import Projekt.database.DatabaseManipulator;
+import Projekt.database.Queryable;
 import Projekt.model.Patient;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.KeyEvent;
+import javafx.stage.Stage;
 
 public class SearchCtrl implements Queryable {
-    private static String cprNumber;
+
+    private String cprNumber;
+    private Stage dialogStage;
 
     @FXML
     private TextField cprTextfield;
@@ -37,22 +45,45 @@ public class SearchCtrl implements Queryable {
     }
 
     @FXML
-    String SearchPressed(ActionEvent event) {
-        cprNumber = cprTextfield.getText();
+    void SearchPressed(ActionEvent event) {
 
-        return cprNumber;
+        try {   // succes kriterie
+            Patient.setCprNumber(cprTextfield.getText());
+            System.out.println(Patient.getcprNumber());
+            Patient pa = new Patient();
+            Patient.getHealthCaredata(cprNumber); 
+        } 
+        catch (Exception e) {
+            // forkert format grundet tegn og/eller bogstaver
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.initOwner(dialogStage);
+            alert.setTitle("Ugyldigt CPR-nummer format");
+            alert.setHeaderText("CPR-nummeret skal være 10 tal.");
+            alert.setContentText("CPR-nummeret skal have formatet 10 tal.\nIngen bogstaver, tegn eller mellemrum. ");
+            alert.showAndWait();
+            
+        }   
+        
+
+
+
 
     }
 
     @Override
     public void processResultSet(ResultSet rs) throws SQLException {
-        // TODO Auto-generated method stub
+            while(rs.next()){
+             Patient patient = new Patient(rs.getString("navn"));
+             System.out.println(patient.name);
+         }
 
     }
 
     @Override
     public String returnSqlQuery() {
-        String sqlStatement = "SELECT FirstName, LastName FROM Patients WHERE Patients.CPRnumber=" + Patient.getCprNumber();
+     
+       String sqlStatement = "SELECT `navn` FROM `Patientinfo` WHERE `CPR` =" + Patient.getcprNumber();
+       System.out.println(sqlStatement);
         return sqlStatement;
     }
 
@@ -62,5 +93,7 @@ public class SearchCtrl implements Queryable {
         return null;
     }
 
+
 }
+
 

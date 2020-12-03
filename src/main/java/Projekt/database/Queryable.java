@@ -1,4 +1,5 @@
 package Projekt.database;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -24,6 +25,6 @@ public interface Queryable {
      * Return SQL Update Query String 
      * @return String with a SQL Update Query
      */
-  
+    String returnSqlUpdate();
 
 }

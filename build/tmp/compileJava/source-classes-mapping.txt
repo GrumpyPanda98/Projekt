@@ -1,9 +1,13 @@
 Projekt/model/Datacategory.java
  Projekt.model.Datacategory
+Projekt/database/DatabaseManipulator.java
+ Projekt.database.DatabaseManipulator
 Projekt/MainApp.java
  Projekt.MainApp
-Projekt/model/Patient.java
- Projekt.model.Patient
+Projekt/database/DatabaseDetails.java
+ Projekt.database.DatabaseDetails
+Projekt/database/Queryable.java
+ Projekt.database.Queryable
 Projekt/controller/LoginCtrl.java
  Projekt.controller.LoginCtrl
 Projekt/model/HealthPerson.java
@@ -12,5 +16,9 @@ Projekt/controller/Queryable.java
  Projekt.controller.Queryable
 Projekt/controller/DatabaseCtrl.java
  Projekt.controller.DatabaseCtrl
+Projekt/model/PatientHandler.java
+ Projekt.model.PatientHandler
+Projekt/model/Patient.java
+ Projekt.model.Patient
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl
