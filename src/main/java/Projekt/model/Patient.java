@@ -10,6 +10,7 @@ public class Patient {
     public String medicalCenter;
     public String hospital;
     public String sortDataCategory;
+    public String CPR;
 
     private static String cpr;
 
@@ -22,6 +23,11 @@ public class Patient {
         this.medicalCenter = medicalCenter;
         this.hospital = hospital;
         this.sortDataCategory = sortDataCategory;
+    }
+    public Patient(String name, String address, String CPR) {
+        this.name = name;
+        this.address = address;
+        this.CPR = CPR;
     }
 
     public String getAddress() {
@@ -49,6 +55,9 @@ public class Patient {
     }
 
     public static String getcprNumber() {
+        return cpr;
+    }
+    public String getCPR() {
         return cpr;
     }
     

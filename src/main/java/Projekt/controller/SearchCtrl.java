@@ -17,6 +17,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
+
 public class SearchCtrl {
 
     private String cprNumber;
@@ -68,6 +69,7 @@ public class SearchCtrl {
                 stage.show(); //Vi viser den nye stage
                 
                 cprTextfield.clear(); // Clear cpr nummeret efter der er klikket ok
+                
                 } 
                 else {
     // ... user chose CANCEL or closed the dialog

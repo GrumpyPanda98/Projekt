@@ -8,15 +8,19 @@ import Projekt.database.*;
 public class PatientHandler implements Queryable {
 
     public  static String tempName = "fejl";
+    public  static String newCPR;
+    public  static String newAddress;
+
     // overskriver kommandoen i interfacet. Denne metode bliver kun kaldt hvis returnSqlQuery kommandoen går igennem
     @Override
     public void processResultSet(ResultSet rs) throws SQLException {
            while(rs.next()){
-             Patient aktuelPatient = new Patient(rs.getString("navn"));
+             Patient aktuelPatient = new Patient(rs.getString("navn"), rs.getString("adresse"), rs.getString("CPR"));
              tempName = aktuelPatient.getName();
-            
-            
-
+             newCPR = aktuelPatient.getCPR(); 
+             newAddress = aktuelPatient.getAddress();
+                       
+        
         }
     }
 
@@ -24,13 +28,13 @@ public class PatientHandler implements Queryable {
     @Override
     public String returnSqlQuery() {
      
-       String sqlStatement = "SELECT `navn` FROM `Patientinfo` WHERE `CPR` =" + Patient.getcprNumber();
+       String sqlStatement = "SELECT * FROM `Patientinfo` WHERE `CPR` =" + Patient.getcprNumber();
         return sqlStatement;
     }
 
     @Override
     public String returnSqlUpdate() {
-        // TODO Auto-generated method stub
+        //
         return null;
     }
  }

@@ -16,7 +16,7 @@
       <Label fx:id="fornavn" layoutX="142.0" layoutY="81.0" text="Label" />
       <Label fx:id="efternavn" layoutX="142.0" layoutY="105.0" text="Label" />
       <Label fx:id="addresse" layoutX="142.0" layoutY="131.0" text="Label" />
-      <Text layoutX="37.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patientinformation">
+      <Text layoutX="35.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patientinformation">
          <font>
             <Font size="24.0" />
          </font>
@@ -30,5 +30,7 @@
       </Text>
       <Button fx:id="laegeKnap" layoutX="82.0" layoutY="279.0" mnemonicParsing="false" onAction="#lageKnapTrykket" prefHeight="86.0" prefWidth="120.0" text="Læge" />
       <Button fx:id="sygehusKnap" layoutX="355.0" layoutY="279.0" mnemonicParsing="false" onAction="#sygehusKnapTrykket" prefHeight="86.0" prefWidth="120.0" text="Sygehus" />
+      <Text layoutX="14.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPR-nummer:" />
+      <Label fx:id="CPR" layoutX="142.0" layoutY="56.0" text="Label" />
    </children>
 </AnchorPane>
