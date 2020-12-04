@@ -14,6 +14,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
+import Projekt.MainApp;
 
 
 public class LoginCtrl {
@@ -54,7 +55,8 @@ public class LoginCtrl {
     
     if (loggedInUser!=null)
         {
-        FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("/SearchView.fxml")); // Ny loader som henter "SearchView"
+            MainApp.closeWindow();
+            FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("/SearchView.fxml")); // Ny loader som henter "SearchView"
            Parent root1 = (Parent) fxmlloader.load(); 
            Stage stage = new Stage();
            stage.setScene(new Scene(root1));

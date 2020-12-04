@@ -12,7 +12,7 @@ public class MainApp extends Application {
    
    
    
-  private Stage primaryStage;
+  private static Stage primaryStage;
    // public BorderPane rootLayout;
 
     @Override
@@ -48,9 +48,12 @@ public class MainApp extends Application {
             
             e.printStackTrace();
         }   
+        
     }
 
-
+    public static void closeWindow() {
+        primaryStage.close();
+    }
 
    
  
