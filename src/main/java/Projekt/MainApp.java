@@ -27,6 +27,7 @@ public class MainApp extends Application {
 
         
     }
+
     public void showLoginView() {
         try {
             
@@ -42,17 +43,17 @@ public class MainApp extends Application {
             // ReferralCtrl controller = loader.getController();
             primaryStage.show();
             
-            
-            
-            
-
-                    
+                      
         } catch (IOException e) {
             
             e.printStackTrace();
-        }
+        }   
     }
-    
+
+
+
+   
+ 
     
     /**
      * Initializes the root layout.

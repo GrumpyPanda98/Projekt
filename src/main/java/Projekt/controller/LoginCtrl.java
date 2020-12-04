@@ -64,7 +64,6 @@ public class LoginCtrl {
         {
     
         Alert alert = new Alert(AlertType.ERROR);
-          alert.setTitle("Error Message");
           alert.setHeaderText("Du har indtastet de forkerte login-oplysniger");
           alert.showAndWait();
         }

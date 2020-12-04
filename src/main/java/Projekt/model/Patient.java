@@ -3,8 +3,8 @@ package Projekt.model;
 import Projekt.database.DatabaseManipulator;
 
 public class Patient {
-    public String name ;
-    public String address ;
+    public String name;
+    public String address;
     public static String cprNumber;
     public Datacategory datacategory;
     public String medicalCenter;
