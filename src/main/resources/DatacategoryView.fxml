@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <SplitPane dividerPositions="0.24610244988864144, 0.4910913140311804" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane>
+          <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Datakategorier" textAlignment="CENTER" wrapText="false">
+              <font>
+                <Font size="18.0" fx:id="x1" />
+              </font>
+              <textFill>
+                <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
+              </textFill>
+            </Label>
+                  <Button fx:id="smokestatus" layoutX="33.0" layoutY="70.0" mnemonicParsing="false" onAction="#smokestatusPressed" prefHeight="70.0" prefWidth="157.0" text="Rygestatus" />
+                  <Button fx:id="fev1" layoutX="33.0" layoutY="350.0" mnemonicParsing="false" onAction="#fev1Pressed" prefHeight="70.0" prefWidth="157.0" text="FEV1" />
+                  <Button fx:id="mwt" layoutX="33.0" layoutY="490.0" mnemonicParsing="false" onAction="#mwtPressed" prefHeight="70.0" prefWidth="157.0" text="6MWT" />
+                  <Button fx:id="bmi" layoutX="33.0" layoutY="210.0" mnemonicParsing="false" onAction="#bmiPressed" prefHeight="70.0" prefWidth="157.0" text="BMI" />
+                  <Button fx:id="fvc" layoutX="33.0" layoutY="420.0" mnemonicParsing="false" onAction="#fvcPressed" prefHeight="70.0" prefWidth="157.0" text="FVC" />
+                  <Button fx:id="weight" layoutX="33.0" layoutY="140.0" mnemonicParsing="false" onAction="#weightPressed" prefHeight="70.0" prefWidth="157.0" text="Vægt" />
+                  <Button fx:id="mrc" layoutX="33.0" layoutY="280.0" mnemonicParsing="false" onAction="#mrcPressed" prefHeight="70.0" prefWidth="157.0" text="MRC" />
+          </children>
+        </AnchorPane>
+      <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="595.0" prefWidth="217.0">
+               <children>
+          <Label alignment="CENTER" font="$x1" layoutY="10.0" prefHeight="35.0" prefWidth="91.0" style="&#10;" text="Resultater" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                  <TableView fx:id="results" layoutX="8.0" layoutY="67.0" prefHeight="495.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="104.0" text="Dato udført" />
+                      <TableColumn prefWidth="95.0" text="Resultat" />
+                    </columns>
+                  </TableView>
+               </children>
+      </AnchorPane>
+        <AnchorPane>
+          <children>
+            <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Noter" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                  <TextArea fx:id="notes" layoutX="14.0" layoutY="66.0" prefHeight="495.0" prefWidth="425.0" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</VBox>

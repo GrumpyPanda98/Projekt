@@ -14,9 +14,9 @@ Projekt/controller/LoginCtrl.java
  Projekt.controller.LoginCtrl
 Projekt/model/HealthPerson.java
  Projekt.model.HealthPerson
-Projekt/controller/SummaryCtrl.java
- Projekt.controller.SummaryCtrl
 Projekt/database/DatabaseManipulator.java
  Projekt.database.DatabaseManipulator
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl
+Projekt/controller/SummaryCtrl.java
+ Projekt.controller.SummaryCtrl

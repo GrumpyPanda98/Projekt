@@ -57,15 +57,18 @@ public class SearchCtrl {
             Alert alert = new Alert(AlertType.CONFIRMATION);
             alert.setTitle("Confirmation Dialog");
             alert.setHeaderText("Den kommende side viser oplysninger om: " + PatientHandler.tempName + "                                             ");
-            alert.setContentText("Ved at trykker 'OK' bekraefter du, at du har samtykke fra patienten, og at det er den rigtige patient?");
+            alert.setContentText("Ved at trykke 'OK' bekraefter du, at du har samtykke fra patienten, og at det er den rigtige patient.");
 
             Optional<ButtonType> result = alert.showAndWait();
             if (result.get() == ButtonType.OK){
     // ... user chose OK
-                FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("/SummaryView.fxml")); // Ny loader som henter "SummaryView"
-                Parent root1 = (Parent) fxmlloader.load(); 
+                FXMLLoader fxmlloader = new FXMLLoader(); // Ny loader som henter "SummaryView"
+                fxmlloader.setLocation(getClass().getResource("/SummaryView.fxml"));
+               // Parent root1 = (Parent) fxmlloader.load(); 
+                final Parent root = fxmlloader.load();
+
                 Stage stage = new Stage(); //Vi laver en ny stage
-                stage.setScene(new Scene(root1));
+                stage.setScene(new Scene(root));
                 stage.show(); //Vi viser den nye stage
                 
                 cprTextfield.clear(); // Clear cpr nummeret efter der er klikket ok

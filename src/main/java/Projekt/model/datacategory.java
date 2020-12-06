@@ -1,3 +1,4 @@
+
 package Projekt.model;
 import java.time.LocalDate;
 
@@ -31,4 +32,5 @@ public class Datacategory {
 
 
 }
+
 
