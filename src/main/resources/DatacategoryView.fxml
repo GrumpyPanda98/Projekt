@@ -11,7 +11,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.DatacategoryCtrl">
   <children>
     <SplitPane dividerPositions="0.24610244988864144, 0.4910913140311804" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <items>
@@ -49,6 +49,7 @@
           <children>
             <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Noter" textAlignment="CENTER" textFill="$x2" wrapText="false" />
                   <TextArea fx:id="notes" layoutX="14.0" layoutY="66.0" prefHeight="495.0" prefWidth="425.0" />
+                  <Label fx:id="adress" layoutX="257.0" layoutY="567.0" prefHeight="17.0" prefWidth="183.0" text="Label" />
           </children>
         </AnchorPane>
       </items>
