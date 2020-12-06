@@ -29,14 +29,14 @@ public class SummaryCtrl {
 
     @FXML
     private static Label CPR;
-    
+    /*
     @FXML
     public void initialize(){
     fornavn.setText(PatientHandler.tempName);
         CPR.setText(PatientHandler.newCPR);
         addresse.setText(PatientHandler.newAddress);
     }
-    
+    */
     @FXML
     void lageKnapTrykket(ActionEvent event) {
 
