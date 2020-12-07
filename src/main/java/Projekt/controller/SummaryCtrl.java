@@ -22,38 +22,25 @@ public class SummaryCtrl implements Initializable {
     private Label addresse;
 
     @FXML
-    private Button laegeKnap;
+    private Button doctorButton;
 
     @FXML
-    private Button sygehusKnap;
+    private Button hospitalButton;
 
     @FXML
     private Label CPR;
 
     @FXML
-    void lageKnapTrykket(ActionEvent event) {
+    void doctorButtonPressed(ActionEvent event) {
 
     }
 
     @FXML
-    void sygehusKnapTrykket(ActionEvent event) {
+    void hospitalButtonPressed(ActionEvent event) {
 
     }
 
-    @FXML
-    private URL location;
-    @FXML
-    private ResourceBundle resources;
-/*
-    @FXML
-    public void initialize()
-    {
-        fornavn.setText("afdsafasd");
-        CPR.setText("fdsafsda");
-        addresse.setText("fdsa");
-    }
-}
-	*/
+  
     @Override
     public void initialize(URL location, ResourceBundle resources) {
                 fornavn.setText(PatientHandler.tempName);

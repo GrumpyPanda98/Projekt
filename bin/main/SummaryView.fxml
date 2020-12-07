@@ -7,7 +7,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.SummaryCtrl">
    <children>
       <Text layoutX="43.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fornavn:" />
@@ -28,8 +27,8 @@
             <Font size="17.0" />
          </font>
       </Text>
-      <Button fx:id="laegeKnap" layoutX="82.0" layoutY="279.0" mnemonicParsing="false" onAction="#lageKnapTrykket" prefHeight="86.0" prefWidth="120.0" text="Læge" />
-      <Button fx:id="sygehusKnap" layoutX="355.0" layoutY="279.0" mnemonicParsing="false" onAction="#sygehusKnapTrykket" prefHeight="86.0" prefWidth="120.0" text="Sygehus" />
+      <Button fx:id="doctorButton" layoutX="104.0" layoutY="294.0" mnemonicParsing="false" onAction="#doctorButtonPressed" prefHeight="86.0" prefWidth="120.0" text="Læge" />
+      <Button fx:id="hospitalButton" layoutX="377.0" layoutY="294.0" mnemonicParsing="false" onAction="#hospitalButtonPressed" prefHeight="86.0" prefWidth="120.0" text="Sygehus" />
       <Text layoutX="14.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPR-nummer:" />
       <Label fx:id="CPR" layoutX="142.0" layoutY="56.0" text="Label" />
    </children>
