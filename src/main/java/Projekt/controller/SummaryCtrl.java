@@ -72,7 +72,6 @@ public static boolean hospital;
     }
 
   
-
     
 
 
