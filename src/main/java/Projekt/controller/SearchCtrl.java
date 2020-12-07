@@ -23,8 +23,7 @@ public class SearchCtrl {
     private String cprNumber;
     private Stage dialogStage;
 
-    @FXML
-    private TextField cprTextfield;
+    @FXML TextField cprTextfield;
 
     @FXML
     private Button SearchButton;

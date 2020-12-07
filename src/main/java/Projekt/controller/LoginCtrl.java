@@ -33,7 +33,7 @@ public class LoginCtrl {
     @FXML
     void loginPressed(ActionEvent event) throws IOException {
     
-   /*Tilføj sundhedspersoner*/
+   /*Tilføj sundhedspersoner*/ 
    List<HealthPerson> listOfHealthPersons = new ArrayList<>();
    listOfHealthPersons.add(new HealthPerson("u1", "p1", "Lars Pilgaard", "Lungeafdelingen, Randers hospital"));
    listOfHealthPersons.add(new HealthPerson("u2", "p2", "Hans Pillegaard", "Roevafdelingen, Aalborg hospital"));

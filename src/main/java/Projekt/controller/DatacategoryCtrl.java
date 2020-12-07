@@ -6,13 +6,15 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextArea;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
-
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import Projekt.Handler.BmiHandler;
+import Projekt.Handler.PatientHandler;
+import Projekt.model.BMI;
 
 public class DatacategoryCtrl implements Initializable {
 
@@ -54,8 +56,11 @@ public class DatacategoryCtrl implements Initializable {
 
     @FXML
     void bmiPressed(ActionEvent event) {
-
-    }
+        BMI.getHealthCaredata(PatientHandler.newCPR);
+        
+        
+        
+}
 
     @FXML
     void fev1Pressed(ActionEvent event) {
@@ -89,6 +94,7 @@ public class DatacategoryCtrl implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
         if (SummaryCtrl.hospital==true){
             adress.setText("Hospital");
         }  
