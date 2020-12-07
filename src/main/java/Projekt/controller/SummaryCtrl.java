@@ -51,9 +51,6 @@ public class SummaryCtrl implements Initializable {
     }
 
   
-
-
-    
     
 
 
