@@ -1,5 +1,5 @@
 package Projekt.model;
-
+import Projekt.Handler.*;
 import Projekt.database.DatabaseManipulator;
 
 public class Patient {

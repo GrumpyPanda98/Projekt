@@ -1,9 +1,8 @@
-package Projekt.model;
+package Projekt.Handler;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
 import Projekt.database.*;
+import Projekt.model.*;
 
 public class PatientHandler implements Queryable {
 
@@ -32,9 +31,4 @@ public class PatientHandler implements Queryable {
         return sqlStatement;
     }
 
-    @Override
-    public String returnSqlUpdate() {
-        //
-        return null;
-    }
  }

@@ -3,7 +3,7 @@ package Projekt.controller;
 import java.io.IOException;
 import java.util.Optional;
 import Projekt.model.Patient;
-import Projekt.model.PatientHandler;
+import Projekt.Handler.PatientHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -55,7 +55,7 @@ public class SearchCtrl {
             if (!PatientHandler.tempName.equals("fejl")) {
 
             Alert alert = new Alert(AlertType.CONFIRMATION);
-            alert.setTitle("Confirmation Dialog");
+            alert.setTitle("Øv bøv det virker ikke");
             alert.setHeaderText("Den kommende side viser oplysninger om: " + PatientHandler.tempName + "                                             ");
             alert.setContentText("Ved at trykke 'OK' bekraefter du, at du har samtykke fra patienten, og at det er den rigtige patient.");
 
@@ -70,7 +70,8 @@ public class SearchCtrl {
                 Stage stage = new Stage(); //Vi laver en ny stage
                 stage.setScene(new Scene(root));
                 stage.show(); //Vi viser den nye stage
-                
+                stage.setTitle("SmartDataShare");
+
                 cprTextfield.clear(); // Clear cpr nummeret efter der er klikket ok
                 
                 } 
