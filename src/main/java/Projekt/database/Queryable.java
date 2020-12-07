@@ -21,10 +21,5 @@ public interface Queryable {
      */
     String returnSqlQuery();
 
-    /**
-     * Return SQL Update Query String 
-     * @return String with a SQL Update Query
-     */
-    String returnSqlUpdate();
 
 }
