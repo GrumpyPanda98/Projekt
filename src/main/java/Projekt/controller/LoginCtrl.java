@@ -61,6 +61,7 @@ public class LoginCtrl {
            Stage stage = new Stage();
            stage.setScene(new Scene(root1));
            stage.show();
+           stage.setTitle("SmartDataShare");
         }
         else
         {
