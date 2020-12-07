@@ -4,15 +4,15 @@ package Projekt.model;
 
 
 public class Datacategory {
-    protected String date;
-    protected String doneBy;
-    protected boolean graphValidy;
-    protected String notes;
+    protected static String date;
+    protected static String doneBy;
+    protected static boolean graphValididy;
+    protected static String notes;
 
-    public Datacategory(String date, String doneBy, boolean graphValidy, String notes){
+    public Datacategory(String date, String doneBy, boolean graphValididy, String notes){
         this.date = date;
         this.doneBy = doneBy;
-        this.graphValidy = graphValidy;
+        this.graphValididy = graphValididy;
         this.notes = notes;
     }
 
@@ -27,7 +27,7 @@ public class Datacategory {
     }
 
     public boolean getGraphValidy() {
-        return graphValidy;
+        return graphValididy;
     }
 
 

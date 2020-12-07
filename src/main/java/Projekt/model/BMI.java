@@ -1,18 +1,51 @@
 package Projekt.model;
 
+import Projekt.Handler.BmiHandler;
+import Projekt.database.DatabaseManipulator;
 
 public class BMI extends Datacategory {
-    public int result;
-    
+    public static float result;
 
-    public BMI(String date, String doneBy, boolean graphValidy, String notes, int result) {
-        super(date, doneBy, graphValidy, notes);
+    public BMI(String date, String doneBy, boolean graphValididy, String notes, float result) {
+        super(date, doneBy, graphValididy, notes);
+
+        BMI.date = date;
+        BMI.doneBy = doneBy;
+        BMI.graphValididy = graphValididy;
+        BMI.notes = notes;
+        BMI.result = result;
+    }
+
+    public static void getHealthCaredata(String cprNumber) { // Opretter PersonHandler og henter sundhedsdata
+        BmiHandler bh = new BmiHandler(date, doneBy, graphValididy, notes, result);
+        DatabaseManipulator.executeQueryWithResultSet(bh);
         
-        this.date = date;
-        this.doneBy = doneBy;
-        this.graphValidy = graphValidy;
-        this.notes = notes;
-        this.result = result;
+    }
+
+	@Override
+    public String getDate() {
+        // TODO Auto-generated method stub
+        return super.getDate();
+    }
+
+    @Override
+    public String getDoneBy() {
+        // TODO Auto-generated method stub
+        return super.getDoneBy();
     }
     
+    @Override
+    public String getNotes() {
+        // TODO Auto-generated method stub
+        return super.getNotes();
+    }
+    public float getResult() {
+    return result;
+    }
+    @Override
+    public boolean getGraphValidy() {
+        // TODO Auto-generated method stub
+        return super.getGraphValidy();
+    }
+
 }
