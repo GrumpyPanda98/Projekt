@@ -2,52 +2,56 @@ package Projekt.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import Projekt.model.PatientHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class SummaryCtrl {
+public class SummaryCtrl implements Initializable {
 
     @FXML
-    private static Label fornavn;
+    private Label fornavn;
 
     @FXML
     private Label efternavn;
 
     @FXML
-    private static Label addresse;
+    private Label addresse;
 
     @FXML
-    private Button laegeKnap;
+    private Button doctorButton;
 
     @FXML
-    private Button sygehusKnap;
+    private Button hospitalButton;
 
     @FXML
-    private static Label CPR;
-    
+    private Label CPR;
+
     @FXML
-    public void initialize(){
-        fornavn.setText(PatientHandler.tempName);
-        CPR.setText(PatientHandler.newCPR);
-        addresse.setText(PatientHandler.newAddress);
-    }
-    
-    @FXML
-    void lageKnapTrykket(ActionEvent event) {
+    void doctorButtonPressed(ActionEvent event) {
 
     }
 
     @FXML
-    void sygehusKnapTrykket(ActionEvent event) {
+    void hospitalButtonPressed(ActionEvent event) {
 
     }
-	
-    
-    
+
+  
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+                fornavn.setText(PatientHandler.tempName);
+                CPR.setText(PatientHandler.newCPR);
+                addresse.setText(PatientHandler.newAddress);
+            }
+
+    }
+
+  
+
     
 
 
-}
