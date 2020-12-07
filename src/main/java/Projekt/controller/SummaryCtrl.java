@@ -2,24 +2,22 @@ package Projekt.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import Projekt.model.PatientHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class SummaryCtrl implements Initializable {
+public class SummaryCtrl {
 
     @FXML
-    private Label fornavn;
+    private static Label fornavn;
 
     @FXML
     private Label efternavn;
 
     @FXML
-    private Label addresse;
+    private static Label addresse;
 
     @FXML
     private Button laegeKnap;
@@ -28,8 +26,15 @@ public class SummaryCtrl implements Initializable {
     private Button sygehusKnap;
 
     @FXML
-    private Label CPR;
-
+    private static Label CPR;
+    
+    @FXML
+    public void initialize(){
+        fornavn.setText(PatientHandler.tempName);
+        CPR.setText(PatientHandler.newCPR);
+        addresse.setText(PatientHandler.newAddress);
+    }
+    
     @FXML
     void lageKnapTrykket(ActionEvent event) {
 
@@ -39,32 +44,10 @@ public class SummaryCtrl implements Initializable {
     void sygehusKnapTrykket(ActionEvent event) {
 
     }
-
-    @FXML
-    private URL location;
-    @FXML
-    private ResourceBundle resources;
-/*
-    @FXML
-    public void initialize()
-    {
-        fornavn.setText("afdsafasd");
-        CPR.setText("fdsafsda");
-        addresse.setText("fdsa");
-    }
-}
-	*/
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-                fornavn.setText(PatientHandler.tempName);
-                CPR.setText(PatientHandler.newCPR);
-                addresse.setText(PatientHandler.newAddress);
-            }
-
-    }
-
-  
-
+	
+    
+    
     
 
 
+}
