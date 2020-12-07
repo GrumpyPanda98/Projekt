@@ -38,8 +38,8 @@
           <Label alignment="CENTER" font="$x1" layoutY="10.0" prefHeight="35.0" prefWidth="91.0" style="&#10;" text="Resultater" textAlignment="CENTER" textFill="$x2" wrapText="false" />
                   <TableView fx:id="results" layoutX="8.0" layoutY="67.0" prefHeight="495.0" prefWidth="200.0">
                     <columns>
-                      <TableColumn prefWidth="104.0" text="Dato udført" />
-                      <TableColumn prefWidth="95.0" text="Resultat" />
+                      <TableColumn fx:id="datoKolonne" prefWidth="104.0" text="Dato udført" />
+                      <TableColumn fx:id="resultKolonne" prefWidth="95.0" text="Resultat" />
                     </columns>
                   </TableView>
                </children>
