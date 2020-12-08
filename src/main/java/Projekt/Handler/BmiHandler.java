@@ -3,40 +3,52 @@ package Projekt.Handler;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 import Projekt.database.Queryable;
 import Projekt.model.BMI;
 import Projekt.model.Patient;
 
 
 public class BmiHandler implements Queryable {
-    public static ArrayList<BMI> listOfBMI = new ArrayList<>();
-	
-	
-	public BmiHandler(String date, String doneBy, boolean graphValididy, String notes, float result) {
+    public ArrayList<BMI> listOfBMI = new ArrayList<>(16);
+    
+
+
+    public BmiHandler(String date, String doneBy, boolean graphValidity, String notes, String result) {
+	}
+
+	public void addBMIToList(BMI bh) {
+        listOfBMI.add(bh);
     }
 
-    public void addBMIToList(BMI bh) {
-    this.listOfBMI.add(bh);
+    public ArrayList<BMI> getListOfBMI() {
+        return listOfBMI;
     }
 
-    public static ArrayList<BMI> getBMIList() {
+
+/*
+    public ArrayList<BMI> getBMIList() {
         return BmiHandler.listOfBMI;
     }
-    
+*/
 	@Override
 	public void processResultSet(ResultSet rs) throws SQLException {
 		
 		while (rs.next()){
-            BmiHandler bmilist = new BmiHandler(rs.getString("dato"), rs.getString("sted"), true, rs.getString("notat"), rs.getFloat("BMI"));
-                        
-		}
-		
+            addBMIToList(new BMI(rs.getString("dato"), rs.getString("sted"), rs.getString("notat"),rs.getString("BMI")));
+              System.out.println(getListOfBMI().get(0).result);
+              System.out.println(getListOfBMI().get(0).date);
+        }
+    
+        
+        
 	}
 
 	
 
-	@Override
+	public void listOfBMI(String string, String string2, boolean b, String string3, float float1) {
+    }
+
+    @Override
 	public String returnSqlQuery() {
         String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber();
         return sqlStatement;

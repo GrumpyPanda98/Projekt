@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import Projekt.database.Queryable;
 
-public class WeightHandler implements Queryable {
+public class WeightChangeHandler implements Queryable {
 
     @Override
     public void processResultSet(ResultSet rs) throws SQLException {

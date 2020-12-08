@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Projekt/model/Datacategory.java
  Projekt.model.Datacategory
 Projekt/Handler/PatientHandler.java
@@ -50,3 +51,5 @@ Projekt/controller/LoginCtrl.java
  Projekt.controller.LoginCtrl
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl
+=======
+>>>>>>> Stashed changes

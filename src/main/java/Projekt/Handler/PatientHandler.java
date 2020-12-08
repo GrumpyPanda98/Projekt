@@ -9,6 +9,7 @@ public class PatientHandler implements Queryable {
     public  static String tempName = "fejl";
     public  static String newCPR;
     public  static String newAddress;
+    public String newnewCPR;
     
     // overskriver kommandoen i interfacet. Denne metode bliver kun kaldt hvis returnSqlQuery kommandoen går igennem
     @Override
@@ -18,6 +19,7 @@ public class PatientHandler implements Queryable {
             tempName = aktuelPatient.getName();
              newCPR = aktuelPatient.getCPR(); 
              newAddress = aktuelPatient.getAddress();
+             newnewCPR = aktuelPatient.getCPR();
                        
         
         }
