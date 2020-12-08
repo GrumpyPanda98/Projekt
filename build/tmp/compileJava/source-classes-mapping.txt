@@ -1,52 +1,52 @@
-Projekt/database/DatabaseDetails.java
- Projekt.database.DatabaseDetails
-Projekt/model/HealthPerson.java
- Projekt.model.HealthPerson
-Projekt/Handler/SixMwtHandler.java
- Projekt.Handler.SixMwtHandler
-Projekt/MainApp.java
- Projekt.MainApp
-Projekt/Handler/FvcHandler.java
- Projekt.Handler.FvcHandler
-Projekt/controller/LoginCtrl.java
- Projekt.controller.LoginCtrl
-Projekt/Handler/FEV1Handler.java
- Projekt.Handler.FEV1Handler
+Projekt/model/Datacategory.java
+ Projekt.model.Datacategory
+Projekt/Handler/PatientHandler.java
+ Projekt.Handler.PatientHandler
 Projekt/Handler/WeightHandler.java
  Projekt.Handler.WeightHandler
 Projekt/Handler/MrcHandler.java
  Projekt.Handler.MrcHandler
-Projekt/database/Queryable.java
- Projekt.database.Queryable
-Projekt/Handler/SmokeStatusHandler.java
- Projekt.Handler.SmokeStatusHandler
-Projekt/database/DatabaseManipulator.java
- Projekt.database.DatabaseManipulator
-Projekt/model/Datacategory.java
- Projekt.model.Datacategory
-Projekt/model/BMI.java
- Projekt.model.BMI
-Projekt/Handler/PatientHandler.java
- Projekt.Handler.PatientHandler
-Projekt/model/SmokeStatus.java
- Projekt.model.SmokeStatus
 Projekt/controller/DatacategoryCtrl.java
  Projekt.controller.DatacategoryCtrl
+Projekt/database/DatabaseManipulator.java
+ Projekt.database.DatabaseManipulator
 Projekt/model/FEV1.java
  Projekt.model.FEV1
-Projekt/model/FVC.java
- Projekt.model.FVC
 Projekt/model/SixMWT.java
  Projekt.model.SixMWT
+Projekt/MainApp.java
+ Projekt.MainApp
 Projekt/model/Weight.java
  Projekt.model.Weight
 Projekt/model/MRC.java
  Projekt.model.MRC
-Projekt/controller/SummaryCtrl.java
- Projekt.controller.SummaryCtrl
-Projekt/Handler/BmiHandler.java
- Projekt.Handler.BmiHandler
 Projekt/model/Patient.java
  Projekt.model.Patient
+Projekt/model/BMI.java
+ Projekt.model.BMI
+Projekt/model/SmokeStatus.java
+ Projekt.model.SmokeStatus
+Projekt/model/HealthPerson.java
+ Projekt.model.HealthPerson
+Projekt/database/Queryable.java
+ Projekt.database.Queryable
+Projekt/Handler/FEV1Handler.java
+ Projekt.Handler.FEV1Handler
+Projekt/model/FVC.java
+ Projekt.model.FVC
+Projekt/Handler/FvcHandler.java
+ Projekt.Handler.FvcHandler
+Projekt/Handler/SmokeStatusHandler.java
+ Projekt.Handler.SmokeStatusHandler
+Projekt/controller/SummaryCtrl.java
+ Projekt.controller.SummaryCtrl
+Projekt/database/DatabaseDetails.java
+ Projekt.database.DatabaseDetails
+Projekt/Handler/BmiHandler.java
+ Projekt.Handler.BmiHandler
+Projekt/Handler/SixMwtHandler.java
+ Projekt.Handler.SixMwtHandler
+Projekt/controller/LoginCtrl.java
+ Projekt.controller.LoginCtrl
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl
