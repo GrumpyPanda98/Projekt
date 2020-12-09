@@ -1,10 +1,9 @@
-<<<<<<< Updated upstream
 Projekt/model/Datacategory.java
  Projekt.model.Datacategory
 Projekt/Handler/PatientHandler.java
  Projekt.Handler.PatientHandler
-Projekt/Handler/WeightHandler.java
- Projekt.Handler.WeightHandler
+Projekt/Handler/WeightChangeHandler.java
+ Projekt.Handler.WeightChangeHandler
 Projekt/Handler/MrcHandler.java
  Projekt.Handler.MrcHandler
 Projekt/controller/DatacategoryCtrl.java
@@ -17,12 +16,12 @@ Projekt/model/SixMWT.java
  Projekt.model.SixMWT
 Projekt/MainApp.java
  Projekt.MainApp
-Projekt/model/Weight.java
- Projekt.model.Weight
 Projekt/model/MRC.java
  Projekt.model.MRC
 Projekt/model/Patient.java
  Projekt.model.Patient
+Projekt/model/WeightChange.java
+ Projekt.model.WeightChange
 Projekt/model/BMI.java
  Projekt.model.BMI
 Projekt/model/SmokeStatus.java
@@ -51,5 +50,3 @@ Projekt/controller/LoginCtrl.java
  Projekt.controller.LoginCtrl
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl
-=======
->>>>>>> Stashed changes
