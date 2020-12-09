@@ -2,10 +2,10 @@ Projekt/model/Datacategory.java
  Projekt.model.Datacategory
 Projekt/Handler/PatientHandler.java
  Projekt.Handler.PatientHandler
-Projekt/model/SixMWT.java
- Projekt.model.SixMWT
-Projekt/Handler/SixMwtHandler.java
- Projekt.Handler.SixMwtHandler
+Projekt/model/BMI.java
+ Projekt.model.BMI
+Projekt/Handler/FvcHandler.java
+ Projekt.Handler.FvcHandler
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl
 Projekt/database/DatabaseManipulator.java
@@ -30,8 +30,8 @@ Projekt/model/HealthPerson.java
  Projekt.model.HealthPerson
 Projekt/database/Queryable.java
  Projekt.database.Queryable
-Projekt/controller/SummaryCtrl.java
- Projekt.controller.SummaryCtrl
+Projekt/Handler/WeightChangeHandler.java
+ Projekt.Handler.WeightChangeHandler
 Projekt/Handler/BmiHandler.java
  Projekt.Handler.BmiHandler
 Projekt/Handler/FEV1Handler.java
@@ -42,11 +42,11 @@ Projekt/Handler/MrcHandler.java
  Projekt.Handler.MrcHandler
 Projekt/model/FEV1.java
  Projekt.model.FEV1
-Projekt/model/BMI.java
- Projekt.model.BMI
-Projekt/Handler/FvcHandler.java
- Projekt.Handler.FvcHandler
-Projekt/Handler/WeightChangeHandler.java
- Projekt.Handler.WeightChangeHandler
+Projekt/model/SixMWT.java
+ Projekt.model.SixMWT
+Projekt/controller/SummaryCtrl.java
+ Projekt.controller.SummaryCtrl
+Projekt/Handler/SixMwtHandler.java
+ Projekt.Handler.SixMwtHandler
 Projekt/controller/DatacategoryCtrl.java
  Projekt.controller.DatacategoryCtrl
