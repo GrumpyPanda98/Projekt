@@ -3,6 +3,8 @@ package Projekt.Handler;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
+import Projekt.controller.SummaryCtrl;
 import Projekt.database.*;
 import Projekt.database.Queryable;
 import Projekt.model.Patient;
@@ -45,9 +47,14 @@ public class SixMwtHandler implements Queryable {
 
     @Override
     public String returnSqlQuery() {
-    String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber();
-    return sqlStatement;
-    }
-
+        if (SummaryCtrl.hospital) {
+            String sqlStatement = "SELECT * FROM `EPJ` WHERE `CPRnr` =" + Patient.getcprNumber()+ " AND `sixMWT` IS NOT NULL";
+            return sqlStatement;
+            }
+            else {
+                String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `sixMWT` IS NOT NULL";
+                return sqlStatement;
+            }
+        }
 }
 

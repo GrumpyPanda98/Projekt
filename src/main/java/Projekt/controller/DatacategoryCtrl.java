@@ -50,7 +50,6 @@ public class DatacategoryCtrl implements Initializable {
     @FXML
     private Button sixmwt;
 
-
     private ObservableList<Datacategory> dataList = FXCollections.observableArrayList();
 
     @FXML
@@ -73,7 +72,6 @@ public class DatacategoryCtrl implements Initializable {
         
         dataList.clear();
         BmiHandler bmi = new BmiHandler(PatientHandler.newCPR);
-               
         dataList.addAll(bmi.getListOfBMI());
         tabDataView.setItems(dataList);
     }
@@ -137,7 +135,7 @@ public class DatacategoryCtrl implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        if (SummaryCtrl.hospital == true) {
+        if (SummaryCtrl.hospital) {
             adress.setText("Hospital");
         }
 
@@ -156,7 +154,11 @@ public class DatacategoryCtrl implements Initializable {
             if (event.getClickCount() == 1 && (! row.isEmpty()) ) {
                 Datacategory rowData = row.getItem();
                 notes.setText(rowData.notes);
-                adress.setText("Sted:" + rowData.doneBy);
+                if (SummaryCtrl.hospital)
+                adress.setText("Hospital: " + rowData.doneBy);
+                else {
+                adress.setText("Praksis: " + rowData.doneBy);
+                }
             }
         });
         return row ;

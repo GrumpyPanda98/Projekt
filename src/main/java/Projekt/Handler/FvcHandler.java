@@ -8,6 +8,7 @@ import Projekt.database.DatabaseManipulator;
 import Projekt.database.Queryable;
 import Projekt.model.FVC;
 import Projekt.model.Patient;
+import Projekt.controller.SummaryCtrl;
 
 public class FvcHandler implements Queryable {
 
@@ -50,8 +51,14 @@ public class FvcHandler implements Queryable {
 
     @Override
 	public String returnSqlQuery() {
-        String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber();
+        if (SummaryCtrl.hospital) {
+        String sqlStatement = "SELECT * FROM `EPJ` WHERE `CPRnr` =" + Patient.getcprNumber()+ " AND `FVC` IS NOT NULL";
         return sqlStatement;
+        }
+        else {
+            String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `FVC` IS NOT NULL";
+            return sqlStatement;
+        }
 	}
 
 }

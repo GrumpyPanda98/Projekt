@@ -4,9 +4,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-
 import Projekt.model.Patient;
 import Projekt.model.SmokeStatus;
+import Projekt.controller.SummaryCtrl;
 import Projekt.database.DatabaseManipulator;
 import Projekt.database.Queryable;
 
@@ -46,8 +46,14 @@ public class SmokeStatusHandler implements Queryable {
 
     @Override
     public String returnSqlQuery() {
-        String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber();
-        return sqlStatement;
+        if (SummaryCtrl.hospital) {
+            String sqlStatement = "SELECT * FROM `EPJ` WHERE `CPRnr` =" + Patient.getcprNumber()+ " AND `rygestatus` IS NOT NULL";
+            return sqlStatement;
+            }
+            else {
+                String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `rygestatus` IS NOT NULL";
+                return sqlStatement;
+            }
 	}
     
 }

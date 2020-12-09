@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import Projekt.controller.SummaryCtrl;
 import Projekt.database.DatabaseManipulator;
 import Projekt.database.Queryable;
 import Projekt.model.MRC;
@@ -50,8 +51,13 @@ public class MrcHandler implements Queryable {
 
     @Override
 	public String returnSqlQuery() {
-        String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber();
-        return sqlStatement;
-	}
-    
+        if (SummaryCtrl.hospital) {
+            String sqlStatement = "SELECT * FROM `EPJ` WHERE `CPRnr` =" + Patient.getcprNumber()+ " AND `MRC` IS NOT NULL";
+            return sqlStatement;
+            }
+            else {
+                String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `MRC` IS NOT NULL";
+                return sqlStatement;
+            }
+        }
 }
