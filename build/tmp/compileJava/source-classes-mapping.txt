@@ -4,8 +4,8 @@ Projekt/Handler/PatientHandler.java
  Projekt.Handler.PatientHandler
 Projekt/Handler/WeightChangeHandler.java
  Projekt.Handler.WeightChangeHandler
-Projekt/Handler/MrcHandler.java
- Projekt.Handler.MrcHandler
+Projekt/Handler/FvcHandler.java
+ Projekt.Handler.FvcHandler
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl
 Projekt/database/DatabaseManipulator.java
@@ -16,8 +16,8 @@ Projekt/model/SixMWT.java
  Projekt.model.SixMWT
 Projekt/MainApp.java
  Projekt.MainApp
-Projekt/model/MRC.java
- Projekt.model.MRC
+Projekt/model/FVC.java
+ Projekt.model.FVC
 Projekt/model/Patient.java
  Projekt.model.Patient
 Projekt/model/WeightChange.java
@@ -38,15 +38,15 @@ Projekt/Handler/FEV1Handler.java
  Projekt.Handler.FEV1Handler
 Projekt/Handler/SmokeStatusHandler.java
  Projekt.Handler.SmokeStatusHandler
-Projekt/controller/SummaryCtrl.java
- Projekt.controller.SummaryCtrl
+Projekt/Handler/MrcHandler.java
+ Projekt.Handler.MrcHandler
 Projekt/model/FEV1.java
  Projekt.model.FEV1
 Projekt/model/BMI.java
  Projekt.model.BMI
-Projekt/model/FVC.java
- Projekt.model.FVC
-Projekt/Handler/FvcHandler.java
- Projekt.Handler.FvcHandler
+Projekt/model/MRC.java
+ Projekt.model.MRC
+Projekt/controller/SummaryCtrl.java
+ Projekt.controller.SummaryCtrl
 Projekt/controller/DatacategoryCtrl.java
  Projekt.controller.DatacategoryCtrl

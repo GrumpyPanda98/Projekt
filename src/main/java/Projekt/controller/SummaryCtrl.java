@@ -20,6 +20,7 @@ import Projekt.model.*;
 
 public class SummaryCtrl implements Initializable {
 public static boolean hospital;
+
     @FXML
     private Label fornavn;
 

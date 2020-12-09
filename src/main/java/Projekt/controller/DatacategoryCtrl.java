@@ -33,29 +33,22 @@ public class DatacategoryCtrl implements Initializable {
     private Button smokestatus;
 
     @FXML
-    private Button fev1;
-
-    @FXML
-    private Button mwt;
+    private Button weight;
 
     @FXML
     private Button bmi;
 
     @FXML
-    private Button fvc;
-
-    @FXML
-    private Button weight;
-
-    @FXML
     private Button mrc;
 
     @FXML
-    private Label adress;
+    private Button fev1;
 
     @FXML
-    private Label notes;
+    private Button fvc;
 
+    @FXML
+    private Button mwt;
 
 
     private ObservableList<Datacategory> dataList = FXCollections.observableArrayList();
@@ -68,6 +61,12 @@ public class DatacategoryCtrl implements Initializable {
 
     @FXML
     public TableColumn<Datacategory, String> colResult;
+
+    @FXML
+    private Label adress;
+
+    @FXML
+    private Label notes;
 
     @FXML
     void bmiPressed(ActionEvent event) {

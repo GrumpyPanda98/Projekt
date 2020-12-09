@@ -59,10 +59,10 @@
       <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="595.0" prefWidth="217.0">
                <children>
           <Label alignment="CENTER" font="$x1" layoutY="10.0" prefHeight="35.0" prefWidth="91.0" style="&#10;" text="Resultater" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                  <TableView fx:id="results" layoutX="8.0" layoutY="68.0" prefHeight="495.0" prefWidth="200.0">
+                  <TableView fx:id="tabDataView" layoutX="8.0" layoutY="68.0" prefHeight="495.0" prefWidth="200.0">
                     <columns>
-                      <TableColumn prefWidth="104.0" text="Dato udført" />
-                      <TableColumn prefWidth="95.0" text="Resultat" />
+                      <TableColumn fx:id="colDate" prefWidth="104.0" text="Dato udført" />
+                      <TableColumn fx:id="colResult" prefWidth="95.0" text="Resultat" />
                     </columns>
                      <cursor>
                         <Cursor fx:constant="HAND" />
