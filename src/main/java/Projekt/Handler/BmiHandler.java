@@ -36,11 +36,6 @@ public class BmiHandler implements Queryable {
         return listOfBMI;
     }
 
-/*
-    public ArrayList<BMI> getBMIList() {
-        return BmiHandler.listOfBMI;
-    }
-*/
 	@Override
 	public void processResultSet(ResultSet rs) throws SQLException {
 		
@@ -52,10 +47,6 @@ public class BmiHandler implements Queryable {
         
 	}
 
-	
-
-	public void listOfBMI(String string, String string2, boolean b, String string3, float float1) {
-    }
 
     @Override
 	public String returnSqlQuery() {

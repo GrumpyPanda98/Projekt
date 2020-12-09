@@ -13,9 +13,7 @@ public class BMI extends Datacategory {
         super(date, doneBy, notes, result);
     }
 
-    public BMI() {
-        super("-", "-", "-","-");
-    }
+   
 
 	@Override
     public String getDate() {
