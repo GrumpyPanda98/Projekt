@@ -1,15 +1,15 @@
 Projekt/model/Datacategory.java
  Projekt.model.Datacategory
-Projekt/Handler/PatientHandler.java
- Projekt.Handler.PatientHandler
+Projekt/controller/SummaryCtrl.java
+ Projekt.controller.SummaryCtrl
 Projekt/model/BMI.java
  Projekt.model.BMI
 Projekt/model/SmokeStatus.java
  Projekt.model.SmokeStatus
 Projekt/controller/DatacategoryCtrl.java
  Projekt.controller.DatacategoryCtrl
-Projekt/database/DatabaseManipulator.java
- Projekt.database.DatabaseManipulator
+Projekt/database/Queryable.java
+ Projekt.database.Queryable
 Projekt/database/DatabaseDetails.java
  Projekt.database.DatabaseDetails
 Projekt/model/MRC.java
@@ -28,8 +28,6 @@ Projekt/model/FEV1.java
  Projekt.model.FEV1
 Projekt/model/HealthPerson.java
  Projekt.model.HealthPerson
-Projekt/database/Queryable.java
- Projekt.database.Queryable
 Projekt/model/SixMWT.java
  Projekt.model.SixMWT
 Projekt/Handler/FEV1Handler.java
@@ -38,8 +36,8 @@ Projekt/Handler/FvcHandler.java
  Projekt.Handler.FvcHandler
 Projekt/Handler/SmokeStatusHandler.java
  Projekt.Handler.SmokeStatusHandler
-Projekt/controller/SummaryCtrl.java
- Projekt.controller.SummaryCtrl
+Projekt/Handler/PatientHandler.java
+ Projekt.Handler.PatientHandler
 Projekt/Handler/WeightChangeHandler.java
  Projekt.Handler.WeightChangeHandler
 Projekt/Handler/BmiHandler.java
@@ -48,5 +46,7 @@ Projekt/Handler/MrcHandler.java
  Projekt.Handler.MrcHandler
 Projekt/Handler/SixMwtHandler.java
  Projekt.Handler.SixMwtHandler
+Projekt/database/DatabaseManipulator.java
+ Projekt.database.DatabaseManipulator
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl
