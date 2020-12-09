@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.SummaryCtrl">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.SummaryCtrl">
    <children>
       <Text layoutX="26.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fulde navn:" />
       <Text layoutX="35.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addresse:" />
@@ -21,16 +21,16 @@
       </Text>
       <Line endX="152.69998168945312" endY="-2.80712890625" layoutX="115.0" layoutY="165.0" startX="-115.00001525878906" startY="-2.80712890625" />
       <Line endX="-88.80000305175781" endY="147.69288635253906" layoutX="357.0" layoutY="14.0" startX="-88.80000305175781" startY="-13.999996185302734" />
-      <Text layoutX="22.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vælg hvor der ønskes at se sundhedsdata fra:">
+      <Text layoutX="14.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vælg hvor der ønskes at se sundhedsdata fra:">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
-      <Button fx:id="doctorButton" layoutX="104.0" layoutY="294.0" mnemonicParsing="false" onAction="#doctorButtonPressed" prefHeight="86.0" prefWidth="120.0" text="Læge">
+      <Button fx:id="doctorButton" layoutX="253.0" layoutY="292.0" mnemonicParsing="false" onAction="#doctorButtonPressed" prefHeight="86.0" prefWidth="120.0" text="Læge">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="hospitalButton" layoutX="377.0" layoutY="294.0" mnemonicParsing="false" onAction="#hospitalButtonPressed" prefHeight="86.0" prefWidth="120.0" text="Sygehus">
+      <Button fx:id="hospitalButton" layoutX="518.0" layoutY="292.0" mnemonicParsing="false" onAction="#hospitalButtonPressed" prefHeight="86.0" prefWidth="120.0" text="Sygehus">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
