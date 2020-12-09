@@ -11,7 +11,7 @@ import Projekt.model.Patient;
 
 
 public class BmiHandler implements Queryable {
-    public ArrayList<BMI> listOfBMI = new ArrayList<>(16);
+    public ArrayList<BMI> listOfBMI = new ArrayList<>();
     
     private String cprNumber;
 
