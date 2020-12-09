@@ -48,7 +48,7 @@ public class DatacategoryCtrl implements Initializable {
     private Button fvc;
 
     @FXML
-    private Button mwt;
+    private Button sixmwt;
 
 
     private ObservableList<Datacategory> dataList = FXCollections.observableArrayList();
@@ -109,8 +109,12 @@ public class DatacategoryCtrl implements Initializable {
     }
 
     @FXML
-    void mwtPressed(ActionEvent event) {
-
+    void sixmwtPressed(ActionEvent event) {
+        dataList.clear();
+        SixMwtHandler sixmwt = new SixMwtHandler(PatientHandler.newCPR);
+               
+        dataList.addAll(sixmwt.getListOfSixMwt());
+        tabDataView.setItems(dataList);
     }
 
     @FXML
