@@ -24,8 +24,8 @@ Projekt/model/WeightChange.java
  Projekt.model.WeightChange
 Projekt/controller/LoginCtrl.java
  Projekt.controller.LoginCtrl
-Projekt/model/SmokeStatus.java
- Projekt.model.SmokeStatus
+Projekt/Handler/SixMwtHandler.java
+ Projekt.Handler.SixMwtHandler
 Projekt/model/HealthPerson.java
  Projekt.model.HealthPerson
 Projekt/database/Queryable.java
@@ -36,17 +36,17 @@ Projekt/Handler/BmiHandler.java
  Projekt.Handler.BmiHandler
 Projekt/Handler/FEV1Handler.java
  Projekt.Handler.FEV1Handler
+Projekt/controller/SummaryCtrl.java
+ Projekt.controller.SummaryCtrl
 Projekt/Handler/SmokeStatusHandler.java
  Projekt.Handler.SmokeStatusHandler
-Projekt/Handler/MrcHandler.java
- Projekt.Handler.MrcHandler
 Projekt/model/FEV1.java
  Projekt.model.FEV1
 Projekt/model/SixMWT.java
  Projekt.model.SixMWT
-Projekt/controller/SummaryCtrl.java
- Projekt.controller.SummaryCtrl
-Projekt/Handler/SixMwtHandler.java
- Projekt.Handler.SixMwtHandler
+Projekt/model/SmokeStatus.java
+ Projekt.model.SmokeStatus
+Projekt/Handler/MrcHandler.java
+ Projekt.Handler.MrcHandler
 Projekt/controller/DatacategoryCtrl.java
  Projekt.controller.DatacategoryCtrl

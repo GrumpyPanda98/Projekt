@@ -119,7 +119,11 @@ public class DatacategoryCtrl implements Initializable {
 
     @FXML
     void smokestatusPressed(ActionEvent event) {
-
+        dataList.clear();
+        SmokeStatusHandler smokestatus = new SmokeStatusHandler(PatientHandler.newCPR);
+               
+        dataList.addAll(smokestatus.getListOfSmokeStatus());
+        tabDataView.setItems(dataList);
     }
 
     @FXML

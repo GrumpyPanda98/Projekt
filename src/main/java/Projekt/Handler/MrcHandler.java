@@ -40,7 +40,7 @@ public class MrcHandler implements Queryable {
 	public void processResultSet(ResultSet rs) throws SQLException {
 		
 		while (rs.next()){
-            addMrcToList(new MRC(rs.getString("dato"), rs.getString("sted"), rs.getString("notat"),rs.getString("BMI")));
+            addMrcToList(new MRC(rs.getString("dato"), rs.getString("sted"), rs.getString("notat"),rs.getString("MRC")));
         }
     
         
