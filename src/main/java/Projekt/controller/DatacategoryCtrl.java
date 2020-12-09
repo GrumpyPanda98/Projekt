@@ -76,6 +76,10 @@ public class DatacategoryCtrl implements Initializable {
                
         dataList.addAll(bmi.getListOfBMI());
         tabDataView.setItems(dataList);
+        
+        colDate.setSortType(TableColumn.SortType.DESCENDING);
+        tabDataView.getSortOrder().add(colDate);
+        tabDataView.sort();
     }
 
     
@@ -86,6 +90,10 @@ public class DatacategoryCtrl implements Initializable {
                
         dataList.addAll(fev1.getListOfFEV1());
         tabDataView.setItems(dataList);
+
+        colDate.setSortType(TableColumn.SortType.DESCENDING);
+        tabDataView.getSortOrder().add(colDate);
+        tabDataView.sort();
     }
 
     @FXML
@@ -95,6 +103,10 @@ public class DatacategoryCtrl implements Initializable {
                
         dataList.addAll(fvc.getListOfFVC());
         tabDataView.setItems(dataList);
+
+        colDate.setSortType(TableColumn.SortType.DESCENDING);
+        tabDataView.getSortOrder().add(colDate);
+        tabDataView.sort();
     }
     
 
@@ -106,6 +118,10 @@ public class DatacategoryCtrl implements Initializable {
         dataList.addAll(mrc.getListOfMrc());
         tabDataView.setItems(dataList);
 
+        colDate.setSortType(TableColumn.SortType.DESCENDING);
+        tabDataView.getSortOrder().add(colDate);
+        tabDataView.sort();
+
     }
 
     @FXML
@@ -115,6 +131,10 @@ public class DatacategoryCtrl implements Initializable {
                
         dataList.addAll(sixmwt.getListOfSixMwt());
         tabDataView.setItems(dataList);
+
+        colDate.setSortType(TableColumn.SortType.DESCENDING);
+        tabDataView.getSortOrder().add(colDate);
+        tabDataView.sort();
     }
 
     @FXML
@@ -124,6 +144,10 @@ public class DatacategoryCtrl implements Initializable {
                
         dataList.addAll(smokestatus.getListOfSmokeStatus());
         tabDataView.setItems(dataList);
+
+        colDate.setSortType(TableColumn.SortType.DESCENDING);
+        tabDataView.getSortOrder().add(colDate);
+        tabDataView.sort();
     }
 
     @FXML
@@ -133,6 +157,10 @@ public class DatacategoryCtrl implements Initializable {
                
         dataList.addAll(weightChange.getListOfWeight());
         tabDataView.setItems(dataList);
+
+        colDate.setSortType(TableColumn.SortType.DESCENDING);
+        tabDataView.getSortOrder().add(colDate);
+        tabDataView.sort();
     }
 
     @Override
@@ -157,6 +185,7 @@ public class DatacategoryCtrl implements Initializable {
                 Datacategory rowData = row.getItem();
                 notes.setText(rowData.notes);
                 adress.setText("Sted:" + rowData.doneBy);
+                
             }
         });
         return row ;
