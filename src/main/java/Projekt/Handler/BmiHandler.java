@@ -8,7 +8,7 @@ import Projekt.database.DatabaseManipulator;
 import Projekt.database.Queryable;
 import Projekt.model.BMI;
 import Projekt.model.Patient;
-
+import Projekt.controller.SummaryCtrl;
 
 public class BmiHandler implements Queryable {
     public ArrayList<BMI> listOfBMI = new ArrayList<>();
@@ -50,8 +50,14 @@ public class BmiHandler implements Queryable {
 
     @Override
 	public String returnSqlQuery() {
-        String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber();
+        if (SummaryCtrl.hospital) {
+        String sqlStatement = "SELECT * FROM `EPJ` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `BMI` IS NOT NULL";
         return sqlStatement;
+        }
+        else {
+            String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `BMI` IS NOT NULL";
+            return sqlStatement;
+        }
 	}
 
 }

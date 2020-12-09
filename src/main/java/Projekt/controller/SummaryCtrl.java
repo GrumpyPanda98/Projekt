@@ -38,6 +38,7 @@ public static boolean hospital;
 
     @FXML
     void doctorButtonPressed(ActionEvent event) throws IOException {
+        hospital = false;
         FXMLLoader fxmlloader = new FXMLLoader(); // Ny loader som henter "DatacategoryView"
         fxmlloader.setLocation(getClass().getResource("/DatacategoryView.fxml"));
        // Parent root1 = (Parent) fxmlloader.load(); 
@@ -46,11 +47,11 @@ public static boolean hospital;
         stage.setScene(new Scene(root));
         stage.show(); //Vi viser den nye stage
         stage.setTitle("SmartDataShare");
-        hospital = false;
     }
 
     @FXML
     void hospitalButtonPressed(ActionEvent event) throws IOException {
+        hospital = true;
         FXMLLoader fxmlloader = new FXMLLoader(); // Ny loader som henter "DatacategoryView"
         fxmlloader.setLocation(getClass().getResource("/DatacategoryView.fxml"));
        // Parent root1 = (Parent) fxmlloader.load(); 
@@ -59,7 +60,7 @@ public static boolean hospital;
         stage.setScene(new Scene(root));
         stage.show(); //Vi viser den nye stage
         stage.setTitle("SmartDataShare");
-        hospital = true;
+        
     }
 
   

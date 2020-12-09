@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import Projekt.model.FEV1;
 import Projekt.model.Patient;
+import Projekt.controller.SummaryCtrl;
 import Projekt.database.DatabaseManipulator;
 import Projekt.database.Queryable;
 
@@ -45,8 +46,14 @@ public class FEV1Handler implements Queryable {
 
     @Override
     public String returnSqlQuery() {
-        String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber();
+        if (SummaryCtrl.hospital){
+        String sqlStatement = "SELECT * FROM `EPJ` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `FEV1` IS NOT NULL";
         return sqlStatement;
+        }
+        else {
+            String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `FEV1` IS NOT NULL";
+        return sqlStatement;
+        }
 	}
     
 }

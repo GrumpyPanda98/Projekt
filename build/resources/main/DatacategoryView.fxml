@@ -73,7 +73,7 @@
         <AnchorPane>
           <children>
             <Label alignment="CENTER" font="$x1" layoutX="17.0" layoutY="14.0" style="&#10;" text="Noter" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                  <Label fx:id="adress" layoutX="257.0" layoutY="567.0" prefHeight="17.0" prefWidth="183.0" />
+                  <Label fx:id="adress" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="567.0" prefHeight="18.0" prefWidth="421.0" />
                   <Label fx:id="notes" alignment="TOP_LEFT" layoutX="23.0" layoutY="67.0" prefHeight="495.0" prefWidth="410.0" />
           </children>
         </AnchorPane>

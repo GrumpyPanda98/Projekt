@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import Projekt.controller.SummaryCtrl;
 import Projekt.database.DatabaseManipulator;
 import Projekt.database.Queryable;
 import Projekt.model.Patient;
@@ -46,8 +47,15 @@ public class WeightChangeHandler implements Queryable {
 
     @Override
     public String returnSqlQuery() {
-    String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber();
-    return sqlStatement;
+        if (SummaryCtrl.hospital) {
+            String sqlStatement = "SELECT * FROM `EPJ` WHERE `CPRnr` =" + Patient.getcprNumber()+ " AND `vaegt` IS NOT NULL";
+            return sqlStatement;
+            }
+            else {
+                String sqlStatement = "SELECT * FROM `PLS` WHERE `CPRnr` =" + Patient.getcprNumber() + " AND `vaegt` IS NOT NULL";
+                return sqlStatement;
+            }
+
     }
 
 }
