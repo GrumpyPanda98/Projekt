@@ -6,8 +6,8 @@ Projekt/model/BMI.java
  Projekt.model.BMI
 Projekt/model/SmokeStatus.java
  Projekt.model.SmokeStatus
-Projekt/controller/SearchCtrl.java
- Projekt.controller.SearchCtrl
+Projekt/controller/DatacategoryCtrl.java
+ Projekt.controller.DatacategoryCtrl
 Projekt/database/DatabaseManipulator.java
  Projekt.database.DatabaseManipulator
 Projekt/database/DatabaseDetails.java
@@ -48,5 +48,5 @@ Projekt/Handler/MrcHandler.java
  Projekt.Handler.MrcHandler
 Projekt/Handler/SixMwtHandler.java
  Projekt.Handler.SixMwtHandler
-Projekt/controller/DatacategoryCtrl.java
- Projekt.controller.DatacategoryCtrl
+Projekt/controller/SearchCtrl.java
+ Projekt.controller.SearchCtrl

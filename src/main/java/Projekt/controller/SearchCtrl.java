@@ -57,11 +57,8 @@ public class SearchCtrl {
             alert.setTitle("Øv bøv det virker ikke");
             alert.setHeaderText("Den kommende side viser oplysninger om: " + PatientHandler.tempName + "                                             ");
             alert.setContentText("Ved at trykke 'OK' bekraefter du, at du har samtykke fra patienten, og at det er den rigtige patient.");
-<<<<<<< HEAD
-=======
             ((Button) alert.getDialogPane().lookupButton(ButtonType.OK)).setText("Godkend");
             ((Button) alert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("Annuller");
->>>>>>> cff277995cb3aeda7a1796e515aebd39f328813a
             
             Optional<ButtonType> result = alert.showAndWait();
             if (result.get() == ButtonType.OK){
