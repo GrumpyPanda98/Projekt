@@ -17,7 +17,7 @@
       <items>
         <AnchorPane>
           <children>
-            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Datakategorier" textAlignment="CENTER" wrapText="false">
+            <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Datakategorier" textAlignment="CENTER" wrapText="false">
               <font>
                 <Font size="18.0" fx:id="x1" />
               </font>
@@ -58,7 +58,7 @@
         </AnchorPane>
       <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="595.0" prefWidth="217.0">
                <children>
-          <Label alignment="CENTER" font="$x1" layoutY="10.0" prefHeight="35.0" prefWidth="91.0" style="&#10;" text="Resultater" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+          <Label alignment="CENTER" font="$x1" layoutX="61.0" layoutY="10.0" prefHeight="35.0" prefWidth="91.0" style="&#10;" text="Resultater" textAlignment="CENTER" textFill="$x2" wrapText="false" />
                   <TableView fx:id="tabDataView" layoutX="8.0" layoutY="68.0" prefHeight="495.0" prefWidth="200.0">
                     <columns>
                       <TableColumn fx:id="colDate" prefWidth="104.0" text="Dato udført" />
@@ -72,9 +72,9 @@
       </AnchorPane>
         <AnchorPane>
           <children>
-            <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Noter" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                  <Label fx:id="adress" layoutX="257.0" layoutY="567.0" prefHeight="17.0" prefWidth="183.0" text="Label" />
-                  <Label fx:id="notes" alignment="TOP_LEFT" layoutX="23.0" layoutY="67.0" prefHeight="495.0" prefWidth="410.0" text="Label" />
+            <Label alignment="CENTER" font="$x1" layoutX="17.0" layoutY="14.0" style="&#10;" text="Noter" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                  <Label fx:id="adress" layoutX="257.0" layoutY="567.0" prefHeight="17.0" prefWidth="183.0" />
+                  <Label fx:id="notes" alignment="TOP_LEFT" layoutX="23.0" layoutY="67.0" prefHeight="495.0" prefWidth="410.0" />
           </children>
         </AnchorPane>
       </items>
