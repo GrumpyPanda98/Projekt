@@ -54,7 +54,7 @@ public class DatacategoryCtrl implements Initializable {
 
     @FXML
     public TableView<Datacategory> tabDataView;
-    
+
     @FXML
     public TableColumn<Datacategory, String> colDate;
 
@@ -67,42 +67,54 @@ public class DatacategoryCtrl implements Initializable {
     @FXML
     private Label notes;
 
+    void sortTable() {
+        colDate.setSortType(TableColumn.SortType.DESCENDING);
+        tabDataView.getSortOrder().add(colDate);
+        tabDataView.sort();
+    }
+
     @FXML
     void bmiPressed(ActionEvent event) {
-        
+
         dataList.clear();
         BmiHandler bmi = new BmiHandler(PatientHandler.newCPR);
         dataList.addAll(bmi.getListOfBMI());
         tabDataView.setItems(dataList);
+
+        sortTable();
     }
 
-    
     @FXML
     void fev1Pressed(ActionEvent event) {
         dataList.clear();
         FEV1Handler fev1 = new FEV1Handler(PatientHandler.newCPR);
-               
+
         dataList.addAll(fev1.getListOfFEV1());
         tabDataView.setItems(dataList);
+
+        sortTable();
     }
 
     @FXML
     void fvcPressed(ActionEvent event) {
         dataList.clear();
         FvcHandler fvc = new FvcHandler(PatientHandler.newCPR);
-               
+
         dataList.addAll(fvc.getListOfFVC());
         tabDataView.setItems(dataList);
+
+        sortTable();
     }
-    
 
     @FXML
     void mrcPressed(ActionEvent event) {
         dataList.clear();
         MrcHandler mrc = new MrcHandler(PatientHandler.newCPR);
-               
+
         dataList.addAll(mrc.getListOfMrc());
         tabDataView.setItems(dataList);
+
+        sortTable();
 
     }
 
@@ -110,27 +122,34 @@ public class DatacategoryCtrl implements Initializable {
     void sixmwtPressed(ActionEvent event) {
         dataList.clear();
         SixMwtHandler sixmwt = new SixMwtHandler(PatientHandler.newCPR);
-               
+
         dataList.addAll(sixmwt.getListOfSixMwt());
         tabDataView.setItems(dataList);
+
+        sortTable();
     }
 
     @FXML
     void smokestatusPressed(ActionEvent event) {
         dataList.clear();
         SmokeStatusHandler smokestatus = new SmokeStatusHandler(PatientHandler.newCPR);
-               
+
         dataList.addAll(smokestatus.getListOfSmokeStatus());
         tabDataView.setItems(dataList);
+
+        sortTable();
+
     }
 
     @FXML
     void weightPressed(ActionEvent event) {
         dataList.clear();
         WeightChangeHandler weightChange = new WeightChangeHandler(PatientHandler.newCPR);
-               
+
         dataList.addAll(weightChange.getListOfWeight());
         tabDataView.setItems(dataList);
+
+        sortTable();
     }
 
     @Override
@@ -146,25 +165,22 @@ public class DatacategoryCtrl implements Initializable {
         colDate.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getDate()));
         colResult.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getResult()));
 
-
-    
-    tabDataView.setRowFactory( tv -> {
-        TableRow<Datacategory> row = new TableRow<>();
-        row.setOnMouseClicked(event -> {
-            if (event.getClickCount() == 1 && (! row.isEmpty()) ) {
-                Datacategory rowData = row.getItem();
-                notes.setText(rowData.notes);
-                if (SummaryCtrl.hospital)
-                adress.setText("Hospital: " + rowData.doneBy);
-                else {
-                adress.setText("Praksis: " + rowData.doneBy);
+        tabDataView.setRowFactory(tv -> {
+            TableRow<Datacategory> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                if (event.getClickCount() == 1 && (!row.isEmpty())) {
+                    Datacategory rowData = row.getItem();
+                    notes.setText(rowData.notes);
+                    if (SummaryCtrl.hospital)
+                        adress.setText("Hospital: " + rowData.doneBy);
+                    else {
+                        adress.setText("Praksis: " + rowData.doneBy);
+                    }
                 }
-            }
+            });
+            return row;
         });
-        return row ;
-    });
-    
+
     }
 
-    
 }

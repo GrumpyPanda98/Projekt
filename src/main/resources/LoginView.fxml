@@ -10,8 +10,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.LoginCtrl">
    <children>
-      <TextField fx:id="username" layoutX="361.0" layoutY="253.0" prefHeight="26.0" prefWidth="178.0" promptText="Brugernavn" />
-      <PasswordField fx:id="password" layoutX="361.0" layoutY="286.0" prefHeight="26.0" prefWidth="178.0" promptText="Adgangskode" />
+      <TextField fx:id="username" layoutX="361.0" layoutY="253.0" onKeyPressed="#username_enter" prefHeight="26.0" prefWidth="178.0" promptText="Brugernavn" />
+      <PasswordField fx:id="password" layoutX="361.0" layoutY="286.0" onKeyPressed="#password_enter" prefHeight="26.0" prefWidth="178.0" promptText="Adgangskode" />
       <Text layoutX="246.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velkommen til SmartHealthShare" textAlignment="CENTER">
          <font>
             <Font size="28.0" />
