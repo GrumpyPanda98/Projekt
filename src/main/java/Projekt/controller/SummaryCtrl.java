@@ -25,9 +25,6 @@ public static boolean hospital;
     private Label fornavn;
 
     @FXML
-    private Label efternavn;
-
-    @FXML
     private Label addresse;
 
     @FXML
