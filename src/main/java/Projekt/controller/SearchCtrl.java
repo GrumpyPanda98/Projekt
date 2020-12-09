@@ -14,16 +14,17 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
-
 
 public class SearchCtrl {
 
     private String cprNumber;
     private Stage dialogStage;
 
-    @FXML TextField cprTextfield;
+    @FXML
+    TextField cprTextfield;
 
     @FXML
     private Button SearchButton;
@@ -47,11 +48,21 @@ public class SearchCtrl {
     }
 
     @FXML
-    void SearchPressed(ActionEvent event) throws IOException {
+    void Search_enter(KeyEvent event) throws IOException {
+        if (event.getCode().equals(KeyCode.ENTER)) {
+            checkCPR();
+        }
+    }
 
-            Patient.setCprNumber(cprTextfield.getText());
-            Patient.getHealthCaredata(cprNumber);  
-            if (!PatientHandler.tempName.equals("fejl")) {
+    @FXML
+    void SearchPressed(ActionEvent event) throws IOException {
+            checkCPR();
+    }
+
+    void checkCPR() throws IOException {
+        Patient.setCprNumber(cprTextfield.getText());
+        Patient.getHealthCaredata(cprNumber);
+        if (!PatientHandler.tempName.equals("fejl")) {
 
             Alert alert = new Alert(AlertType.CONFIRMATION);
             alert.setTitle("SmartHealthShare");
@@ -59,29 +70,27 @@ public class SearchCtrl {
             alert.setContentText("Ved at trykke 'OK' bekraefter du, at du har samtykke fra patienten, og at det er den rigtige patient.");
             ((Button) alert.getDialogPane().lookupButton(ButtonType.OK)).setText("Godkend");
             ((Button) alert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("Annuller");
-            
+
             Optional<ButtonType> result = alert.showAndWait();
-            if (result.get() == ButtonType.OK){
-    // ... user chose OK
+            if (result.get() == ButtonType.OK) {
+                // ... user chose OK
                 FXMLLoader fxmlloader = new FXMLLoader(); // Ny loader som henter "SummaryView"
                 fxmlloader.setLocation(getClass().getResource("/SummaryView.fxml"));
-               // Parent root1 = (Parent) fxmlloader.load(); 
+                // Parent root1 = (Parent) fxmlloader.load();
                 final Parent root = fxmlloader.load();
 
-                Stage stage = new Stage(); //Vi laver en ny stage
+                Stage stage = new Stage(); // Vi laver en ny stage
                 stage.setScene(new Scene(root));
-                stage.show(); //Vi viser den nye stage
+                stage.show(); // Vi viser den nye stage
                 stage.setTitle("SmartDataShare");
 
                 cprTextfield.clear(); // Clear cpr nummeret efter der er klikket ok
-                
-                } 
-                else {
-    // ... user chose CANCEL or closed the dialog
-                 cprTextfield.clear(); // clear cpr nummeret hvis det er den forkerte patient
+
+            } else {
+                // ... user chose CANCEL or closed the dialog
+                cprTextfield.clear(); // clear cpr nummeret hvis det er den forkerte patient
             }
-        }
-        else {
+        } else {
             // forkert format grundet tegn og/eller bogstaver
             Alert alert = new Alert(AlertType.ERROR);
             alert.initOwner(dialogStage);
@@ -89,23 +98,9 @@ public class SearchCtrl {
             alert.setHeaderText("CPR-nummeret skal være 10 tal.");
             alert.setContentText("CPR-nummeret skal have formatet 10 tal.\nIngen bogstaver, tegn eller mellemrum. ");
             alert.showAndWait();
-        
-            
-        }   
 
-        
-
-        
-        
-
-
-
+        }
 
     }
 
-    
-
-
 }
-
-

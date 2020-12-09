@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.SearchCtrl">
    <children>
-      <TextField fx:id="cprTextfield" layoutX="351.0" layoutY="265.0" onKeyTyped="#MaxTextField" prefHeight="26.0" prefWidth="194.0">
+      <TextField fx:id="cprTextfield" layoutX="351.0" layoutY="265.0" onKeyPressed="#Search_enter" onKeyTyped="#MaxTextField" prefHeight="26.0" prefWidth="194.0">
          <font>
             <Font size="14.0" />
          </font>

@@ -13,6 +13,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import Projekt.MainApp;
 
@@ -29,53 +31,68 @@ public class LoginCtrl {
     private Button loginButton;
 
     HealthPerson loggedInUser = null;  
+    
+    @FXML
+    void password_enter(KeyEvent event) throws IOException {
+        if(event.getCode().equals(KeyCode.ENTER)) {
+            checkLogin();
+       }
+    }
 
     @FXML
-    void loginPressed(ActionEvent event) throws IOException {
-    
-   /*Tilføj sundhedspersoner*/ 
-   List<HealthPerson> listOfHealthPersons = new ArrayList<>();
-   listOfHealthPersons.add(new HealthPerson("u1", "p1", "Lars Pilgaard", "Lungeafdelingen, Randers hospital"));
-   listOfHealthPersons.add(new HealthPerson("u2", "p2", "Hans Pillegaard", "Roevafdelingen, Aalborg hospital"));
-        
-    for (HealthPerson healthperson : listOfHealthPersons) 
-    {
-        if (username.getText().equals(healthperson.getUsername()))
-        {
-            if (password.getText().equals(healthperson.getPassword()))
-            {
-                loggedInUser = healthperson ;
-
-                break;
-            }
-            
-        }
+    void username_enter(KeyEvent event) throws IOException {
+        if(event.getCode().equals(KeyCode.ENTER)) {
+            checkLogin();
+       }
     }
-        
+    @FXML
+    void loginPressed(ActionEvent event) throws IOException {
+        checkLogin();
     
-    if (loggedInUser!=null)
-        {
-            MainApp.closeWindow();
-            FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("/SearchView.fxml")); // Ny loader som henter "SearchView"
-           Parent root1 = (Parent) fxmlloader.load(); 
-           Stage stage = new Stage();
-           stage.setScene(new Scene(root1));
-           stage.show();
-           stage.setTitle("SmartDataShare");
-        }
-        else
-        {
-    
-        Alert alert = new Alert(AlertType.ERROR);
-          alert.setHeaderText("Du har indtastet de forkerte login-oplysniger");
-          alert.showAndWait();
-        }
-} 
+  
 
 }
-    
-          
-    
+   void checkLogin() throws IOException {
+    /*Tilføj sundhedspersoner*/ 
+    List<HealthPerson> listOfHealthPersons = new ArrayList<>();
+    listOfHealthPersons.add(new HealthPerson("u1", "p1", "Lars Pilgaard", "Lungeafdelingen, Randers hospital"));
+    listOfHealthPersons.add(new HealthPerson("u2", "p2", "Hans Pillegaard", "Roevafdelingen, Aalborg hospital"));
+         
+     for (HealthPerson healthperson : listOfHealthPersons) 
+     {
+         if (username.getText().equals(healthperson.getUsername()))
+         {
+             if (password.getText().equals(healthperson.getPassword()))
+             {
+                 loggedInUser = healthperson ;
+ 
+                 break;
+             }
+             
+         }
+     }
+         
+     
+     if (loggedInUser!=null)
+         {
+             MainApp.closeWindow();
+             FXMLLoader fxmlloader = new FXMLLoader(getClass().getResource("/SearchView.fxml")); // Ny loader som henter "SearchView"
+            Parent root1 = (Parent) fxmlloader.load(); 
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+            stage.setTitle("SmartDataShare");
+         }
+         else
+         {
+     
+         Alert alert = new Alert(AlertType.ERROR);
+           alert.setHeaderText("Du har indtastet de forkerte login-oplysniger");
+           alert.showAndWait();
+         }
+        }
+ }        
+
 
 
 
