@@ -70,6 +70,7 @@ public class DatacategoryCtrl implements Initializable {
 
     @FXML
     void bmiPressed(ActionEvent event) {
+        
         dataList.clear();
         BmiHandler bmi = new BmiHandler(PatientHandler.newCPR);
                
@@ -119,7 +120,11 @@ public class DatacategoryCtrl implements Initializable {
 
     @FXML
     void weightPressed(ActionEvent event) {
-
+        dataList.clear();
+        WeightChangeHandler weightChange = new WeightChangeHandler(PatientHandler.newCPR);
+               
+        dataList.addAll(weightChange.getListOfWeight());
+        tabDataView.setItems(dataList);
     }
 
     @Override
@@ -143,6 +148,7 @@ public class DatacategoryCtrl implements Initializable {
             if (event.getClickCount() == 1 && (! row.isEmpty()) ) {
                 Datacategory rowData = row.getItem();
                 notes.setText(rowData.notes);
+                adress.setText("Sted:" + rowData.doneBy);
             }
         });
         return row ;

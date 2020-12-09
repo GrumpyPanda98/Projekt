@@ -10,12 +10,10 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.SummaryCtrl">
    <children>
-      <Text layoutX="43.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fornavn:" />
-      <Text layoutX="37.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Efternavn:" />
-      <Text layoutX="38.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addresse:" />
+      <Text layoutX="26.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fulde navn:" />
+      <Text layoutX="35.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addresse:" />
       <Label fx:id="fornavn" layoutX="142.0" layoutY="81.0" text="Label" />
-      <Label fx:id="efternavn" layoutX="142.0" layoutY="105.0" text="Label" />
-      <Label fx:id="addresse" layoutX="142.0" layoutY="131.0" text="Label" />
+      <Label fx:id="addresse" layoutX="142.0" layoutY="108.0" text="Label" />
       <Text layoutX="35.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patientinformation">
          <font>
             <Font size="24.0" />

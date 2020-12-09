@@ -40,7 +40,7 @@ public class FvcHandler implements Queryable {
 	public void processResultSet(ResultSet rs) throws SQLException {
 		
 		while (rs.next()){
-            addFVCToList(new FVC(rs.getString("dato"), rs.getString("sted"), rs.getString("notat"),rs.getString("BMI")));
+            addFVCToList(new FVC(rs.getString("dato"), rs.getString("sted"), rs.getString("notat"),rs.getString("FVC")));
         }
     
         
