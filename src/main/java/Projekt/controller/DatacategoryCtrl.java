@@ -4,7 +4,6 @@ import java.net.URL;
 
 import java.util.ResourceBundle;
 import Projekt.model.Datacategory;
-import Projekt.model.FEV1;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,7 +15,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import Projekt.Handler.*;

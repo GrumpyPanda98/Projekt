@@ -13,10 +13,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableRow;
-import javafx.scene.control.TableView;
 import javafx.stage.Stage;
-import Projekt.model.*;
+
 
 public class SummaryCtrl implements Initializable {
 public static boolean hospital;
@@ -46,7 +44,7 @@ public static boolean hospital;
         Stage stage = new Stage(); //Vi laver en ny stage
         stage.setScene(new Scene(root));
         stage.show(); //Vi viser den nye stage
-        stage.setTitle("SmartDataShare");
+        stage.setTitle("SmartHealthShare");
     }
 
     @FXML
@@ -59,7 +57,7 @@ public static boolean hospital;
         Stage stage = new Stage(); //Vi laver en ny stage
         stage.setScene(new Scene(root));
         stage.show(); //Vi viser den nye stage
-        stage.setTitle("SmartDataShare");
+        stage.setTitle("SmartHealthShare");
         
     }
 

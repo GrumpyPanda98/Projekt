@@ -1,29 +1,29 @@
 Projekt/model/Datacategory.java
  Projekt.model.Datacategory
-Projekt/controller/SummaryCtrl.java
- Projekt.controller.SummaryCtrl
+Projekt/controller/LoginCtrl.java
+ Projekt.controller.LoginCtrl
 Projekt/model/BMI.java
  Projekt.model.BMI
 Projekt/model/SmokeStatus.java
  Projekt.model.SmokeStatus
-Projekt/controller/DatacategoryCtrl.java
- Projekt.controller.DatacategoryCtrl
+Projekt/database/DatabaseManipulator.java
+ Projekt.database.DatabaseManipulator
 Projekt/database/Queryable.java
  Projekt.database.Queryable
 Projekt/database/DatabaseDetails.java
  Projekt.database.DatabaseDetails
 Projekt/model/MRC.java
  Projekt.model.MRC
-Projekt/MainApp.java
- Projekt.MainApp
+Projekt/Handler/MrcHandler.java
+ Projekt.Handler.MrcHandler
 Projekt/model/FVC.java
  Projekt.model.FVC
-Projekt/model/Patient.java
- Projekt.model.Patient
+Projekt/MainApp.java
+ Projekt.MainApp
 Projekt/model/WeightChange.java
  Projekt.model.WeightChange
-Projekt/controller/LoginCtrl.java
- Projekt.controller.LoginCtrl
+Projekt/Handler/SixMwtHandler.java
+ Projekt.Handler.SixMwtHandler
 Projekt/model/FEV1.java
  Projekt.model.FEV1
 Projekt/model/HealthPerson.java
@@ -36,17 +36,17 @@ Projekt/Handler/FvcHandler.java
  Projekt.Handler.FvcHandler
 Projekt/Handler/SmokeStatusHandler.java
  Projekt.Handler.SmokeStatusHandler
-Projekt/Handler/PatientHandler.java
- Projekt.Handler.PatientHandler
-Projekt/Handler/WeightChangeHandler.java
- Projekt.Handler.WeightChangeHandler
 Projekt/Handler/BmiHandler.java
  Projekt.Handler.BmiHandler
-Projekt/Handler/MrcHandler.java
- Projekt.Handler.MrcHandler
-Projekt/Handler/SixMwtHandler.java
- Projekt.Handler.SixMwtHandler
-Projekt/database/DatabaseManipulator.java
- Projekt.database.DatabaseManipulator
+Projekt/Handler/WeightChangeHandler.java
+ Projekt.Handler.WeightChangeHandler
+Projekt/Handler/PatientHandler.java
+ Projekt.Handler.PatientHandler
+Projekt/controller/SummaryCtrl.java
+ Projekt.controller.SummaryCtrl
+Projekt/model/Patient.java
+ Projekt.model.Patient
+Projekt/controller/DatacategoryCtrl.java
+ Projekt.controller.DatacategoryCtrl
 Projekt/controller/SearchCtrl.java
  Projekt.controller.SearchCtrl

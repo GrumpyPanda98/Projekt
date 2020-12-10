@@ -61,7 +61,6 @@ public class Patient {
         return cpr;
     }
     
-
     public static void setCprNumber(String cprNumber){
         cpr = cprNumber;
     }
@@ -69,10 +68,7 @@ public class Patient {
         PatientHandler ph = new PatientHandler();             
         DatabaseManipulator.executeQueryWithResultSet(ph);
     }
-    public Patient(){
-    
    
-    }
     public Patient(String name){
     
         this.name = name;
