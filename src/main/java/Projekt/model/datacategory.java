@@ -3,12 +3,12 @@ package Projekt.model;
 
 
 
-public class Datacategory {
-    public String date;
-    public String doneBy;
-    public boolean graphValidity;
-    public String notes;
-    public String result;
+public abstract class Datacategory {
+    private String date;
+    private String doneBy;
+    private boolean graphValidity;
+    private String notes;
+    private String result;
 
     public Datacategory(String date, String doneBy, boolean graphValidity, String notes, String result){
         this.date = date;

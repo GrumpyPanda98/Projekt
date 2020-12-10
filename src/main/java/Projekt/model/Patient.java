@@ -3,14 +3,14 @@ import Projekt.Handler.*;
 import Projekt.database.DatabaseManipulator;
 
 public class Patient {
-    public String name;
-    public String address;
-    public static String cprNumber;
-    public Datacategory datacategory;
-    public String medicalCenter;
-    public String hospital;
-    public String sortDataCategory;
-    public String CPR;
+    private String name;
+    private String address;
+    private static String cprNumber;
+    private Datacategory datacategory;
+    private String medicalCenter;
+    private String hospital;
+    private String sortDataCategory;
+    private String CPR;
 
     private static String cpr;
 

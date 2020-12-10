@@ -9,19 +9,16 @@ public class WeightChange extends Datacategory {
     }
     @Override
     public String getDate() {
-        // TODO Auto-generated method stub
         return super.getDate();
     }
 
     @Override
     public String getDoneBy() {
-        // TODO Auto-generated method stub
         return super.getDoneBy();
     }
     
     @Override
     public String getNotes() {
-        // TODO Auto-generated method stub
         return super.getNotes();
     }
 
@@ -31,7 +28,6 @@ public class WeightChange extends Datacategory {
     }
     @Override
     public boolean getGraphValidity() {
-        // TODO Auto-generated method stub
         return super.getGraphValidity();
     }
 }
