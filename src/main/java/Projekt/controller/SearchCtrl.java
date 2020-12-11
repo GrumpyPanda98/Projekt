@@ -96,8 +96,8 @@ public class SearchCtrl {
             Alert alert = new Alert(AlertType.ERROR);
             alert.initOwner(dialogStage);
             alert.setTitle("Ugyldigt CPR-nummer");
-            alert.setHeaderText("CPR-nummeret skal være 10 tal.");
-            alert.setContentText("CPR-nummeret skal have formatet 10 tal.\nIngen bogstaver, tegn eller mellemrum. ");
+            alert.setHeaderText("CPR-nummeret skal have 10 cifre.");
+            alert.setContentText("CPR-nummeret skal have formatet 10 cifre.\nIngen bogstaver, tegn eller mellemrum. ");
             alert.showAndWait();
 
         }
