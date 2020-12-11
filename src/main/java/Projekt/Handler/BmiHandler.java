@@ -18,8 +18,6 @@ public class BmiHandler implements Queryable {
 
     public BmiHandler(String date, String doneBy, boolean graphValidity, String notes, String result) {
 
-
-
     }
     
     public BmiHandler(String cprNumber) {

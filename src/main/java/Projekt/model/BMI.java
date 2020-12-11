@@ -1,7 +1,5 @@
 package Projekt.model;
 
-import Projekt.Handler.BmiHandler;
-import Projekt.database.DatabaseManipulator;
 
 public class BMI extends Datacategory {
 

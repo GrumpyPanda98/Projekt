@@ -3,14 +3,14 @@ import Projekt.Handler.*;
 import Projekt.database.DatabaseManipulator;
 
 public class Patient {
-    public String name;
-    public String address;
-    public static String cprNumber;
-    public Datacategory datacategory;
-    public String medicalCenter;
-    public String hospital;
-    public String sortDataCategory;
-    public String CPR;
+    private String name;
+    private String address;
+    private static String cprNumber;
+    private Datacategory datacategory;
+    private String medicalCenter;
+    private String hospital;
+    private String sortDataCategory;
+    private String CPR;
 
     private static String cpr;
 
@@ -61,7 +61,6 @@ public class Patient {
         return cpr;
     }
     
-
     public static void setCprNumber(String cprNumber){
         cpr = cprNumber;
     }
@@ -69,10 +68,7 @@ public class Patient {
         PatientHandler ph = new PatientHandler();             
         DatabaseManipulator.executeQueryWithResultSet(ph);
     }
-    public Patient(){
-    
    
-    }
     public Patient(String name){
     
         this.name = name;

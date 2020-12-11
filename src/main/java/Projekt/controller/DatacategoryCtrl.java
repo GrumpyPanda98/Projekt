@@ -4,7 +4,6 @@ import java.net.URL;
 
 import java.util.ResourceBundle;
 import Projekt.model.Datacategory;
-import Projekt.model.FEV1;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,7 +15,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import Projekt.Handler.*;
@@ -53,13 +51,13 @@ public class DatacategoryCtrl implements Initializable {
     private ObservableList<Datacategory> dataList = FXCollections.observableArrayList();
 
     @FXML
-    public TableView<Datacategory> tabDataView;
+    private TableView<Datacategory> tabDataView;
 
     @FXML
-    public TableColumn<Datacategory, String> colDate;
+    private TableColumn<Datacategory, String> colDate;
 
     @FXML
-    public TableColumn<Datacategory, String> colResult;
+    private TableColumn<Datacategory, String> colResult;
 
     @FXML
     private Label adress;
@@ -170,11 +168,11 @@ public class DatacategoryCtrl implements Initializable {
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 1 && (!row.isEmpty())) {
                     Datacategory rowData = row.getItem();
-                    notes.setText(rowData.notes);
+                    notes.setText(rowData.getNotes());
                     if (SummaryCtrl.hospital)
-                        adress.setText("Hospital: " + rowData.doneBy);
+                        adress.setText("Hospital: " + rowData.getDoneBy());
                     else {
-                        adress.setText("Praksis: " + rowData.doneBy);
+                        adress.setText("Praksis: " + rowData.getDoneBy());
                     }
                 }
             });

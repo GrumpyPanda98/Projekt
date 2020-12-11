@@ -67,7 +67,7 @@ public class SearchCtrl {
             Alert alert = new Alert(AlertType.CONFIRMATION);
             alert.setTitle("SmartHealthShare");
             alert.setHeaderText("Den kommende side viser oplysninger om: " + PatientHandler.tempName + "                                             ");
-            alert.setContentText("Ved at trykke 'OK' bekraefter du, at du har samtykke fra patienten, og at det er den rigtige patient.");
+            alert.setContentText("Ved at trykke 'Godkend' bekraefter du, at du har samtykke fra patienten, og at det er den rigtige patient.");
             ((Button) alert.getDialogPane().lookupButton(ButtonType.OK)).setText("Godkend");
             ((Button) alert.getDialogPane().lookupButton(ButtonType.CANCEL)).setText("Annuller");
 
@@ -88,13 +88,14 @@ public class SearchCtrl {
 
             } else {
                 // ... user chose CANCEL or closed the dialog
+                PatientHandler.tempName = "fejl";
                 cprTextfield.clear(); // clear cpr nummeret hvis det er den forkerte patient
             }
         } else {
             // forkert format grundet tegn og/eller bogstaver
             Alert alert = new Alert(AlertType.ERROR);
             alert.initOwner(dialogStage);
-            alert.setTitle("Ugyldigt CPR-nummer format");
+            alert.setTitle("Ugyldigt CPR-nummer");
             alert.setHeaderText("CPR-nummeret skal være 10 tal.");
             alert.setContentText("CPR-nummeret skal have formatet 10 tal.\nIngen bogstaver, tegn eller mellemrum. ");
             alert.showAndWait();
