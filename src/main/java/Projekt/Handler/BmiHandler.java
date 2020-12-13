@@ -11,7 +11,7 @@ import Projekt.model.Patient;
 import Projekt.controller.SummaryCtrl;
 
 public class BmiHandler implements Queryable {
-    public ArrayList<BMI> listOfBMI = new ArrayList<>();
+    public <BMI> listOfBMI = new ArrayList<>();
     
     private String cprNumber;
 
@@ -39,12 +39,8 @@ public class BmiHandler implements Queryable {
 		
 		while (rs.next()){
             addBMIToList(new BMI(rs.getString("dato"), rs.getString("sted"), rs.getString("notat"),rs.getString("BMI")));
-        }
-    
-        
-        
+        }  
 	}
-
 
     @Override
 	public String returnSqlQuery() {
