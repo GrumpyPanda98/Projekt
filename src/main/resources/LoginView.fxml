@@ -8,18 +8,34 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.LoginCtrl">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #3C3C3C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.LoginCtrl">
    <children>
-      <TextField fx:id="username" layoutX="361.0" layoutY="253.0" onKeyPressed="#username_enter" prefHeight="26.0" prefWidth="178.0" promptText="Brugernavn" />
-      <PasswordField fx:id="password" layoutX="361.0" layoutY="286.0" onKeyPressed="#password_enter" prefHeight="26.0" prefWidth="178.0" promptText="Adgangskode" />
-      <Text layoutX="246.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velkommen til SmartHealthShare" textAlignment="CENTER">
-         <font>
-            <Font size="28.0" />
-         </font>
-      </Text>
-      <Button fx:id="loginButton" layoutX="361.0" layoutY="320.0" mnemonicParsing="false" onAction="#loginPressed" prefHeight="50.0" prefWidth="178.0" text="Login">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Button>
+      <AnchorPane layoutX="422.0" layoutY="82.0" prefHeight="436.0" prefWidth="415.0" style="-fx-background-color: #3EA6FF;">
+         <children>
+            <TextField fx:id="username" layoutX="40.0" layoutY="170.0" onKeyPressed="#username_enter" prefHeight="39.0" prefWidth="336.0" promptText="Brugernavn">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="40.0" layoutY="237.0" onKeyPressed="#password_enter" prefHeight="39.0" prefWidth="336.0" promptText="Adgangskode">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <Text fill="WHITE" layoutX="27.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velkommen til SmartHealthShare" textAlignment="CENTER">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Button fx:id="loginButton" layoutX="112.0" layoutY="314.0" mnemonicParsing="false" onAction="#loginPressed" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: #3C3C3C;" text="Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

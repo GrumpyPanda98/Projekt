@@ -33,8 +33,7 @@ public class DatacategoryCtrl implements Initializable {
     @FXML
     private Button weight;
 
-    @FXML
-    private Button bmi;
+    @FXML Button bmi;
 
     @FXML
     private Button mrc;
@@ -48,13 +47,12 @@ public class DatacategoryCtrl implements Initializable {
     @FXML
     private Button sixmwt;
 
-    private ObservableList<Datacategory> dataList = FXCollections.observableArrayList();
+    ObservableList<Datacategory> dataList = FXCollections.observableArrayList();
 
     @FXML
     private TableView<Datacategory> tabDataView;
 
-    @FXML
-    private TableColumn<Datacategory, String> colDate;
+    @FXML TableColumn<Datacategory, String> colDate;
 
     @FXML
     private TableColumn<Datacategory, String> colResult;
@@ -71,6 +69,8 @@ public class DatacategoryCtrl implements Initializable {
         tabDataView.sort();
     }
 
+
+    
     @FXML
     void bmiPressed(ActionEvent event) {
 
@@ -78,7 +78,7 @@ public class DatacategoryCtrl implements Initializable {
         BmiHandler bmi = new BmiHandler(PatientHandler.newCPR);
         dataList.addAll(bmi.getListOfBMI());
         tabDataView.setItems(dataList);
-
+        System.out.println(dataList);
         sortTable();
     }
 

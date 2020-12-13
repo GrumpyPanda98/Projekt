@@ -8,61 +8,81 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.DatacategoryCtrl">
   <children>
-    <SplitPane dividerPositions="0.24610244988864144, 0.4910913140311804" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <SplitPane dividerPositions="0.23942093541202672, 0.5077951002227171" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <items>
-        <AnchorPane>
+        <AnchorPane style="-fx-background-color: #3C3C3C;">
           <children>
-            <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Datakategorier" textAlignment="CENTER" wrapText="false">
+            <Label alignment="CENTER" layoutX="52.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Datakategorier" textAlignment="CENTER" textFill="WHITE" wrapText="false">
               <font>
-                <Font size="18.0" fx:id="x1" />
+                <Font size="20.0" fx:id="x1" />
               </font>
-              <textFill>
-                <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
-              </textFill>
             </Label>
-                  <Button fx:id="smokestatus" layoutX="33.0" layoutY="70.0" mnemonicParsing="false" onAction="#smokestatusPressed" prefHeight="70.0" prefWidth="157.0" text="Rygestatus">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-                  <Button fx:id="weight" layoutX="33.0" layoutY="140.0" mnemonicParsing="false" onAction="#weightPressed" prefHeight="70.0" prefWidth="157.0" text="Vægt">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-                  <Button fx:id="bmi" layoutX="33.0" layoutY="210.0" mnemonicParsing="false" onAction="#bmiPressed" prefHeight="70.0" prefWidth="157.0" text="BMI">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-                  <Button fx:id="mrc" layoutX="33.0" layoutY="280.0" mnemonicParsing="false" onAction="#mrcPressed" prefHeight="70.0" prefWidth="157.0" text="MRC">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-                  <Button fx:id="fev1" layoutX="33.0" layoutY="350.0" mnemonicParsing="false" onAction="#fev1Pressed" prefHeight="70.0" prefWidth="157.0" text="FEV1">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-                  <Button fx:id="fvc" layoutX="33.0" layoutY="420.0" mnemonicParsing="false" onAction="#fvcPressed" prefHeight="70.0" prefWidth="157.0" text="FVC">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-                  <Button fx:id="sixmwt" layoutX="33.0" layoutY="490.0" mnemonicParsing="false" onAction="#sixmwtPressed" prefHeight="70.0" prefWidth="157.0" text="6MWT">
+                  <Button fx:id="smokestatus" layoutX="38.0" layoutY="61.0" mnemonicParsing="false" onAction="#smokestatusPressed" prefHeight="70.0" prefWidth="157.0" style="-fx-background-color: #3EA6FF;" text="Rygestatus" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="weight" layoutX="38.0" layoutY="134.0" mnemonicParsing="false" onAction="#weightPressed" prefHeight="70.0" prefWidth="157.0" style="-fx-background-color: #3EA6FF;" text="Vægt" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="bmi" layoutX="38.0" layoutY="207.0" mnemonicParsing="false" onAction="#bmiPressed" prefHeight="70.0" prefWidth="157.0" style="-fx-background-color: #3EA6FF;" text="BMI" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="mrc" layoutX="38.0" layoutY="280.0" mnemonicParsing="false" onAction="#mrcPressed" prefHeight="70.0" prefWidth="157.0" style="-fx-background-color: #3EA6FF;" text="MRC" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="fev1" layoutX="38.0" layoutY="353.0" mnemonicParsing="false" onAction="#fev1Pressed" prefHeight="70.0" prefWidth="157.0" style="-fx-background-color: #3EA6FF;" text="FEV1" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="fvc" layoutX="38.0" layoutY="426.0" mnemonicParsing="false" onAction="#fvcPressed" prefHeight="70.0" prefWidth="157.0" style="-fx-background-color: #3EA6FF;" text="FVC" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="sixmwt" layoutX="38.0" layoutY="499.0" mnemonicParsing="false" onAction="#sixmwtPressed" prefHeight="70.0" prefWidth="157.0" style="-fx-background-color: #3EA6FF;" text="6MWT" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
                   </Button>
           </children>
         </AnchorPane>
-      <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="595.0" prefWidth="217.0">
+      <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="595.0" prefWidth="229.0" style="-fx-background-color: #3C3C3C;">
                <children>
-          <Label alignment="CENTER" font="$x1" layoutX="61.0" layoutY="10.0" prefHeight="35.0" prefWidth="91.0" style="&#10;" text="Resultater" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                  <TableView fx:id="tabDataView" layoutX="8.0" layoutY="68.0" prefHeight="495.0" prefWidth="200.0">
+          <Label alignment="CENTER" layoutX="73.0" layoutY="10.0" prefHeight="35.0" prefWidth="91.0" style="&#10;" text="Resultater" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <TableView fx:id="tabDataView" layoutX="4.0" layoutY="65.0" prefHeight="504.0" prefWidth="226.0">
                     <columns>
-                      <TableColumn fx:id="colDate" prefWidth="104.0" text="Dato udført" />
-                      <TableColumn fx:id="colResult" prefWidth="95.0" text="Resultat" />
+                      <TableColumn fx:id="colDate" prefWidth="119.2000150680542" style="-fx-background-color: #FFFFFF;" text="Dato udført" />
+                      <TableColumn fx:id="colResult" minWidth="0.0" prefWidth="107.20001220703125" style="-fx-background-color: #FFFFFF;" text="Resultat" />
                     </columns>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -70,11 +90,17 @@
                   </TableView>
                </children>
       </AnchorPane>
-        <AnchorPane>
+        <AnchorPane style="-fx-background-color: #3C3C3C;">
           <children>
-            <Label alignment="CENTER" font="$x1" layoutX="17.0" layoutY="14.0" style="&#10;" text="Noter" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                  <Label fx:id="adress" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="567.0" prefHeight="18.0" prefWidth="421.0" />
-                  <Label fx:id="notes" alignment="TOP_LEFT" layoutX="23.0" layoutY="67.0" prefHeight="495.0" prefWidth="410.0" />
+            <Label alignment="CENTER" layoutX="24.0" layoutY="14.0" style="&#10;" text="Noter" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label fx:id="adress" alignment="CENTER_RIGHT" layoutX="17.0" layoutY="574.0" prefHeight="20.0" prefWidth="410.0" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="notes" alignment="TOP_LEFT" layoutX="16.0" layoutY="66.0" prefHeight="504.0" prefWidth="410.0" style="-fx-background-color: #FFFFFF;" />
           </children>
         </AnchorPane>
       </items>
