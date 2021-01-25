@@ -4,37 +4,68 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.SummaryCtrl">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #3C3C3C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projekt.controller.SummaryCtrl">
    <children>
-      <Text layoutX="26.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fulde navn:" />
-      <Text layoutX="35.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addresse:" />
-      <Label fx:id="fornavn" layoutX="142.0" layoutY="81.0" text="Label" />
-      <Label fx:id="addresse" layoutX="142.0" layoutY="108.0" text="Label" />
-      <Text layoutX="35.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patientinformation">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Line endX="152.69998168945312" endY="-2.80712890625" layoutX="115.0" layoutY="165.0" startX="-115.00001525878906" startY="-2.80712890625" />
-      <Line endX="-88.80000305175781" endY="147.69288635253906" layoutX="357.0" layoutY="14.0" startX="-88.80000305175781" startY="-13.999996185302734" />
-      <Text layoutX="14.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vælg hvor der ønskes at se sundhedsdata fra:">
+      <Text fill="WHITE" layoutX="588.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vælg hvor der ønskes at se sundhedsdata fra:" wrappingWidth="205.88378906250006">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
-      <Button fx:id="doctorButton" layoutX="253.0" layoutY="292.0" mnemonicParsing="false" onAction="#doctorButtonPressed" prefHeight="86.0" prefWidth="120.0" text="Læge">
+      <Button fx:id="doctorButton" layoutX="595.0" layoutY="228.0" mnemonicParsing="false" onAction="#doctorButtonPressed" prefHeight="86.0" prefWidth="184.0" style="-fx-background-color: #3EA6FF;" text="Læge" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Button fx:id="hospitalButton" layoutX="518.0" layoutY="292.0" mnemonicParsing="false" onAction="#hospitalButtonPressed" prefHeight="86.0" prefWidth="120.0" text="Sygehus">
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="hospitalButton" layoutX="595.0" layoutY="345.0" mnemonicParsing="false" onAction="#hospitalButtonPressed" prefHeight="86.0" prefWidth="184.0" style="-fx-background-color: #3EA6FF;" text="Sygehus" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <Text layoutX="14.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPR-nummer:" />
-      <Label fx:id="CPR" layoutX="142.0" layoutY="56.0" text="Label" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <AnchorPane layoutX="47.0" layoutY="192.0" prefHeight="244.0" prefWidth="378.0" style="-fx-background-color: #3EA6FF;">
+         <children>
+            <Text fill="WHITE" layoutX="51.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fulde navn:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="51.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addresse:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="fornavn" layoutX="211.0" layoutY="122.0" prefHeight="22.0" prefWidth="127.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="addresse" layoutX="211.0" layoutY="157.0" prefHeight="22.0" prefWidth="127.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="51.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPR-nummer:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="CPR" layoutX="211.0" layoutY="91.0" prefHeight="22.0" prefWidth="127.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="86.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patientinformation">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

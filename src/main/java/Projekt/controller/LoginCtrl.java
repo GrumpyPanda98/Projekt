@@ -55,7 +55,7 @@ public class LoginCtrl {
    void checkLogin() throws IOException {
     /*Tilføj sundhedspersoner*/
     List<HealthPerson> listOfHealthPersons = new ArrayList<>(); //Laver en array liste hvor healthperson kan smides ind.
-    listOfHealthPersons.add(new HealthPerson("u1", "p1", "Lars Pilgaard", "Lungeafdelingen, Randers hospital"));
+    listOfHealthPersons.add(new HealthPerson("lars1234", "lars1234", "Lars Pilgaard", "Lungeafdelingen, Randers hospital"));
     listOfHealthPersons.add(new HealthPerson("u2", "p2", "Hans Pillegaard", "Roevafdelingen, Aalborg hospital"));
          
      for (HealthPerson healthperson : listOfHealthPersons)  //Loop der kører hele listen igennem
